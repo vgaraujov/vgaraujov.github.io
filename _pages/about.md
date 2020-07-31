@@ -10,7 +10,7 @@ redirect_from:
 
 I am currently a PhD student at [Pontificia Universidad Católica de Chile](https://www.ing.uc.cl/en/programas-de-estudio/postgrado/doctorado-ciencias-la-ingenieria/) and [IMFD](https://imfd.cl/en/), advised by Professor [Alvaro Soto](https://asoto.ing.puc.cl/).
 
-My main research interests are in the area of ​​natural language processing and deep learning, specifically on how to expand approaches with mechanisms inspired by human language processing.
+My main research interests are in the area of ​​natural language processing and deep learning, specifically on how to extend current approaches with mechanisms inspired by human language processing.
 
 Previously, I received my master's degree from the Pontificia Universidad Javeriana focused on machine learning and serious games.
 
