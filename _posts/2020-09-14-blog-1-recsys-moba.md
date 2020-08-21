@@ -9,15 +9,24 @@ tags:
   - data mining
 ---
 
-The video game industry has adopted recommendation systems to boost users' interest with a focus on game sales. Other exciting applications within video games are those that help the player make decisions that would maximize their playing experience. In this blog, I am going to present to you a research project focused on the second that resulted in two papers presented in RecSys.
+The video game industry has adopted recommendation systems to boost users' interest with a focus on game sales. Other exciting applications within video games are those that help the player make decisions that would maximize their playing experience. In this blog, I am going to present to you a research focused on the second that resulted in two papers presented in RecSys.
 
-# MOBA Games and Recommendation Problem
-
-# Data Mining for Item Recommendation in MOBA Games Vladimir
+## MOBA Games and Recommendation Problem
 
 
-# Interpretable Contextual Team-aware Item Recommendation: Application in Multiplayer Online Battle Arena Games
 
+## Data Mining for Item Recommendation in MOBA Games Vladimir
 
-Aren't headings cool?
-------
+### Framework
+
+### Results
+
+## Interpretable Contextual Team-aware Item Recommendation: Application in Multiplayer Online Battle Arena Games
+
+### Transformer-based Architecture
+
+### Results
+
+### Attention as Explanation
+
+## Final Remarks
