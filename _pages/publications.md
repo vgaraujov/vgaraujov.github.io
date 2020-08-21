@@ -5,7 +5,7 @@ permalink: /publications/
 author_profile: true
 ---
 
-You can also find my articles on <u><a href="{{https://scholar.google.com/citations?user=p4TbBLEAAAAJ&hl=en}}">my Google Scholar profile</a>.</u>
+You can also find my articles on <u><a href="https://scholar.google.com/citations?user=p4TbBLEAAAAJ&hl=en">my Google Scholar profile</a>.</u>
 
 <b>[Interpretable Contextual Team-aware Item Recommendation: Application in Multiplayer Online Battle Arena Game](https://doi.org/10.1145/3383313.3412211)</b> <br> 
 Andrés Villa, <b>Vladimir Araujo</b>, Francisca Cattan, Denis Parra.
