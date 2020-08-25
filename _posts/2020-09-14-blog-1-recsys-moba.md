@@ -19,9 +19,11 @@ that growth. An example of this phenomenon is the League of Legends World Champi
 tournament of 2019 with more than 105 million hours live on Twitch and YouTube. This type of games can rise up to 64
 million active players per month worldwide, with over a billion monthly gaming hours, affirms [Forbes](https://www.forbes.com/sites/insertcoin/2014/01/27/riots-league-of-legends-reveals-astonishing-27-million-daily-players-67-million-monthly/#1461159b6d39).
 
-League of Legends (LoL) has dominated the marketnsince 2012 and is considered one of the most popular electronic games. The game consists of two teams (red and blue) of five players each, that compete to be the first to destroy the enemy base. Each player controls one character (champion) that interacts with the rest through combats, which are carried out in a particular arena.
+League of Legends (LoL) has dominated the market since 2012 and is considered one of the most popular electronic games. The game consists of two teams (red and blue) of five players each, that compete to be the first to destroy the enemy base. Each player controls one character (champion) that interacts with the rest through combats, which are carried out in a particular arena.
 
-
+<p align="center"> 
+    <img src="https://commons.wikimedia.org/wiki/File:Map_of_MOBA.svg" width="300">
+</p>
 
 
 ## Data Mining for Item Recommendation in MOBA Games
