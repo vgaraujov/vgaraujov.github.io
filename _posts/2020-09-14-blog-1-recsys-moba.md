@@ -22,7 +22,7 @@ million active players per month worldwide, with over a billion monthly gaming h
 League of Legends (LoL) has dominated the market since 2012 and is considered one of the most popular electronic games. The game consists of two teams (red and blue) of five players each, that compete to be the first to destroy the enemy base. Each player controls one character (champion) that interacts with the rest through combats, which are carried out in a particular arena.
 
 <p align="center"> 
-    <img src="https://commons.wikimedia.org/wiki/File:Map_of_MOBA.svg" width="300">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Map_of_MOBA.svg" width="300">
 </p>
 
 
