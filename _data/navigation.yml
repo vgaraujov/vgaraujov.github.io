@@ -15,7 +15,8 @@ main:
   - title: "Blog Posts"
     url: /year-archive/
     
-  # - title: "CV"
+  - title: "CV"
+    url: /files/CV_Vladimir_Araujo.pdf
   #  url: /cv/
     
   # - title: "Guide"
