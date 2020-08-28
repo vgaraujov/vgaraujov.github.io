@@ -9,6 +9,7 @@ tags:
   - data mining
 ---
 
+<p style='text-align: justify;'>
 The video game industry has adopted recommendation systems to boost users' interest with a focus on game sales. Other exciting applications within video games are those that help the player to make decisions that would maximize their gaming experience. In this blog, I am going to present to you a research focused on the second application that resulted in two papers presented in RecSys.
 
 ## MOBA Games and Recommendation Problem
@@ -33,7 +34,7 @@ The pace of the game is encouraged by an in-game currency reward system, which i
 This game presents at least two recommendation problems: champion and item recommendation, because there are more than 140 characters and around 240 items. Both the choice of champions and the items pose the challenge of the number of possible combinations, which users face making decisions based on experience. In this work, we focused on the second one.
 
 <p align="center"> 
-    <img src="/images/recsys-moba/moba_recsys_problem.png" width="300">
+    <img src="/images/recsys-moba/moba_recsys_problem.png" width="250">
 	<center>
 	<figcaption>Example of two teams matchup and item recommendations for the Blue team.</figcaption>
 	</center>
@@ -79,3 +80,4 @@ If you find this work useful for your research, please consider citing our paper
 	series = {RecSys ’19}
 }
 ```
+</p>
