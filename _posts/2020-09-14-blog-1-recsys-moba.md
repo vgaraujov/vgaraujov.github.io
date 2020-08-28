@@ -23,7 +23,7 @@ League of Legends (LoL) has dominated the market since 2012 and is considered on
 
 <p align="center"> 
     <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Map_of_MOBA.svg" width="300">
-	<figcaption>Caption goes here</figcaption>
+	<figcaption>Typical MOBA map. Circles represent turrets. The green area is the jungle and the yellow area are the lanes. The corner areas are the team's base.</figcaption>
 </p>
 
 The pace of the game is encouraged by an in-game currency reward system, which is used to buy items that increase the statistics and performance of the champion. This is one of the main ways for the players to increase their attack and defense power, thereby increasing their contribution to winning the game.
@@ -31,7 +31,7 @@ The pace of the game is encouraged by an in-game currency reward system, which i
 This game presents at least two recommendation problems: champion and item recommendation, because there are more than 140 characters and around 240 items. Both the choice of champions and the items pose the challenge of the number of possible combinations, which users face making decisions based on experience. In this work, we focused on the second one.
 
 <p align="center"> 
-    <img src="https://github.com/vgaraujov/vgaraujov.github.io/blob/master/images/recsys-moba/moba_recsys_problem.png" width="300">
+    <img src="/images/recsys-moba/moba_recsys_problem.png" width="300">
 	<figcaption>Example of two teams matchup and item recommendations for the Blue team.</figcaption>
 </p>
 
