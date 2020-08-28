@@ -55,7 +55,7 @@ This game presents at least two recommendation problems: champion <a href="https
 In order to tackle this task, we proposed a framework based on classical data mining methodology, including slight changes to use it for the recommendation task. This methodology allows generating recommendations using knowledge learned from the actions carried out by the users in previous matches.
 
 ### Results
-
+<p align="center"> 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -113,6 +113,7 @@ In order to tackle this task, we proposed a framework based on classical data mi
   </tr>
 </tbody>
 </table>
+</p>
 
 ## Interpretable Contextual Team-aware Item Recommendation: Application in Multiplayer Online Battle Arena Games
 
