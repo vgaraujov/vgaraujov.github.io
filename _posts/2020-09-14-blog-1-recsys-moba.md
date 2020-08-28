@@ -138,7 +138,7 @@ In order to tackle this task, we proposed a framework based on classical data mi
 ### Results
 <p style='text-align: justify;'>
 <style type="text/css">
-.tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
+.tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;margin:0px auto;}
 .tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
   font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
 .tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
@@ -196,6 +196,7 @@ In order to tackle this task, we proposed a framework based on classical data mi
 </tbody>
 </table>
 </p>
+
 ### Attention as Explanation
 
 <p align="center"> 
