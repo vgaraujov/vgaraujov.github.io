@@ -23,6 +23,7 @@ million active players per month worldwide, with over a billion monthly gaming h
 </p>
 <p style='text-align: justify;'>
 League of Legends (LoL) has dominated the market since 2012 and is considered one of the most popular electronic games. The game consists of two teams (red and blue) of five players each, that compete to be the first to destroy the enemy base. Each player controls one character (champion) that interacts with the rest through combats, which are carried out in a particular arena.
+</p>
 <p align="center"> 
     <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Map_of_MOBA.svg" width="300">
 	<center>
@@ -33,7 +34,7 @@ League of Legends (LoL) has dominated the market since 2012 and is considered on
 The pace of the game is encouraged by an in-game currency reward system, which is used to buy items that increase the statistics and performance of the champion. This is one of the main ways for the players to increase their attack and defense power, thereby increasing their contribution to winning the game.
 </p>
 <p style='text-align: justify;'>
-This game presents at least two recommendation problems: champion and item recommendation, because there are more than 140 characters and around 240 items. Both the choice of champions and the items pose the challenge of the number of possible combinations, which users face making decisions based on experience. In this work, we focused on the second one.
+This game presents at least two recommendation problems: champion <a href="https://dl.acm.org/doi/10.1145/3240323.3240345">(Chen et al., 2018)</a> and item recommendation <a href="https://ieeexplore.ieee.org/document/8395021/">(Looi et al., 2018)</a>, because there are more than 140 characters and around 240 items. Both the choice of champions and the items pose the challenge of the number of possible combinations, which users face making decisions based on experience. In this work, we focused on the latter.
 </p>
 <p align="center"> 
     <img src="/images/recsys-moba/moba_recsys_problem.png" width="250">
@@ -42,13 +43,76 @@ This game presents at least two recommendation problems: champion and item recom
 	</center>
 </p>
 
+
+
 ## Data Mining for Item Recommendation in MOBA Games
 
-[Looi et al. (2018)](https://ieeexplore.ieee.org/document/8395021/)
+
+
 
 ### Framework
 
+In order to tackle this task, we proposed a framework based on classical data mining methodology, including slight changes to use it for the recommendation task. This methodology allows generating recommendations using knowledge learned from the actions carried out by the users in previous matches.
+
 ### Results
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-wp8o{border-color:#000000;text-align:center;vertical-align:top}
+.tg .tg-73oq{border-color:#000000;text-align:left;vertical-align:top}
+.tg .tg-mqa1{border-color:#000000;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-fam6{border-color:#000000;text-align:center;text-decoration:underline;vertical-align:top}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-73oq">Metric</th>
+    <th class="tg-mqa1">Apriori</th>
+    <th class="tg-mqa1">Eclat</th>
+    <th class="tg-mqa1">D Tree</th>
+    <th class="tg-mqa1">Logit</th>
+    <th class="tg-mqa1">ANN</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-73oq">F1@1</td>
+    <td class="tg-wp8o">0.18</td>
+    <td class="tg-wp8o">0.18</td>
+    <td class="tg-wp8o">0.21</td>
+    <td class="tg-wp8o">0.27</td>
+    <td class="tg-fam6">0.32</td>
+  </tr>
+  <tr>
+    <td class="tg-73oq">MAP@1</td>
+    <td class="tg-wp8o">0.43</td>
+    <td class="tg-wp8o">0.44</td>
+    <td class="tg-wp8o">0.52</td>
+    <td class="tg-wp8o">0.67</td>
+    <td class="tg-fam6">0.77</td>
+  </tr>
+  <tr>
+    <td class="tg-73oq">F1@6</td>
+    <td class="tg-wp8o">0.48</td>
+    <td class="tg-wp8o">0.48</td>
+    <td class="tg-wp8o">0.37</td>
+    <td class="tg-wp8o">0.47</td>
+    <td class="tg-fam6">0.56</td>
+  </tr>
+  <tr>
+    <td class="tg-73oq">MAP@6</td>
+    <td class="tg-wp8o">0.58</td>
+    <td class="tg-wp8o">0.59</td>
+    <td class="tg-wp8o">0.64</td>
+    <td class="tg-wp8o">0.71</td>
+    <td class="tg-fam6">0.78</td>
+  </tr>
+</tbody>
+</table>
 
 ## Interpretable Contextual Team-aware Item Recommendation: Application in Multiplayer Online Battle Arena Games
 
