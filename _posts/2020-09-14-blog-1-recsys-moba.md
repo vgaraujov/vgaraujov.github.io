@@ -55,7 +55,7 @@ This game presents at least two recommendation problems: champion <a href="https
 In order to tackle this task, we proposed a framework based on classical data mining methodology, including slight changes to use it for the recommendation task. This methodology allows generating recommendations using knowledge learned from the actions carried out by the users in previous matches.
 
 <p align="center"> 
-    <img src="/images/recsys-moba/framework.png" width="700">
+    <img src="/images/recsys-moba/framework.png" width="650">
 	<center>
 	<figcaption>Example of two teams matchup and item recommendations for the Blue team.</figcaption>
 	</center>
@@ -129,71 +129,69 @@ In order to tackle this task, we proposed a framework based on classical data mi
 ### Transformer-based Architecture
 
 <p align="center"> 
-    <img src="/images/recsys-moba/model_ttir.png" width="800">
+    <img src="/images/recsys-moba/model_ttir.png" width="750">
 	<center>
-	<figcaption>Example of two teams matchup and item recommendations for the Blue team.</figcaption>
+	<figcaption>Network architecture of TTIR</figcaption>
 	</center>
 </p>
 
 ### Results
 <p style='text-align: justify;'>
 <style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-1wig{font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
-.tg .tg-uca5{text-align:left;text-decoration:underline;vertical-align:top}
-.tg .tg-fymr{border-color:inherit;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-7btt{border-color:inherit;font-weight:bold;text-align:center;vertical-align:top}
-.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
-.tg .tg-0lax{text-align:left;vertical-align:top}
+.tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
+.tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
+  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-wp8o{border-color:#000000;text-align:center;vertical-align:top}
+.tg .tg-mcqj{border-color:#000000;font-weight:bold;text-align:left;vertical-align:top}
+.tg .tg-mqa1{border-color:#000000;font-weight:bold;text-align:center;vertical-align:top}
+.tg .tg-73oq{border-color:#000000;text-align:left;vertical-align:top}
+.tg .tg-12k0{border-color:#000000;text-align:left;text-decoration:underline;vertical-align:top}
 </style>
 <table class="tg">
 <thead>
   <tr>
-    <th class="tg-fymr">Metric</th>
-    <th class="tg-7btt">D Tree</th>
-    <th class="tg-7btt">Logit</th>
-    <th class="tg-7btt">ANN</th>
-    <th class="tg-1wig">CNN</th>
-    <th class="tg-1wig">TTIR</th>
+    <th class="tg-mcqj">Metric</th>
+    <th class="tg-mqa1">D Tree</th>
+    <th class="tg-mqa1">Logit</th>
+    <th class="tg-mqa1">ANN</th>
+    <th class="tg-mcqj">CNN</th>
+    <th class="tg-mcqj">TTIR</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td class="tg-0pky">F1@1</td>
-    <td class="tg-c3ow">0.21</td>
-    <td class="tg-c3ow">0.27</td>
-    <td class="tg-c3ow">0.32</td>
-    <td class="tg-0lax">0.33</td>
-    <td class="tg-uca5">0.34</td>
+    <td class="tg-73oq">F1@1</td>
+    <td class="tg-wp8o">0.21</td>
+    <td class="tg-wp8o">0.27</td>
+    <td class="tg-wp8o">0.32</td>
+    <td class="tg-73oq">0.33</td>
+    <td class="tg-12k0">0.34</td>
   </tr>
   <tr>
-    <td class="tg-0pky">MAP@1</td>
-    <td class="tg-c3ow">0.52</td>
-    <td class="tg-c3ow">0.67</td>
-    <td class="tg-c3ow">0.77</td>
-    <td class="tg-0lax">0.79</td>
-    <td class="tg-uca5">0.80</td>
+    <td class="tg-73oq">MAP@1</td>
+    <td class="tg-wp8o">0.52</td>
+    <td class="tg-wp8o">0.67</td>
+    <td class="tg-wp8o">0.77</td>
+    <td class="tg-73oq">0.79</td>
+    <td class="tg-12k0">0.80</td>
   </tr>
   <tr>
-    <td class="tg-0pky">F1@6</td>
-    <td class="tg-c3ow">0.37</td>
-    <td class="tg-c3ow">0.47</td>
-    <td class="tg-c3ow">0.56</td>
-    <td class="tg-0lax">0.58</td>
-    <td class="tg-uca5">0.60</td>
+    <td class="tg-73oq">F1@6</td>
+    <td class="tg-wp8o">0.37</td>
+    <td class="tg-wp8o">0.47</td>
+    <td class="tg-wp8o">0.56</td>
+    <td class="tg-73oq">0.58</td>
+    <td class="tg-12k0">0.60</td>
   </tr>
   <tr>
-    <td class="tg-0pky">MAP@6</td>
-    <td class="tg-c3ow">0.64</td>
-    <td class="tg-c3ow">0.71</td>
-    <td class="tg-c3ow">0.78</td>
-    <td class="tg-0lax">0.79</td>
-    <td class="tg-uca5">0.81</td>
+    <td class="tg-73oq">MAP@6</td>
+    <td class="tg-wp8o">0.64</td>
+    <td class="tg-wp8o">0.71</td>
+    <td class="tg-wp8o">0.78</td>
+    <td class="tg-73oq">0.79</td>
+    <td class="tg-12k0">0.81</td>
   </tr>
 </tbody>
 </table>
@@ -201,9 +199,9 @@ In order to tackle this task, we proposed a framework based on classical data mi
 ### Attention as Explanation
 
 <p align="center"> 
-    <img src="/images/recsys-moba/attention_matrix.png" width="800">
+    <img src="/images/recsys-moba/attention_matrix.png" width="750">
 	<center>
-	<figcaption>Example of two teams matchup and item recommendations for the Blue team.</figcaption>
+	<figcaption>Visualization of the attention weights for each member of the Blue team on each member of both teams (bottom row).</figcaption>
 	</center>
 </p>
 
