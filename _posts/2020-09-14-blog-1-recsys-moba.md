@@ -11,35 +11,36 @@ tags:
 
 <p style='text-align: justify;'>
 The video game industry has adopted recommendation systems to boost users' interest with a focus on game sales. Other exciting applications within video games are those that help the player to make decisions that would maximize their gaming experience. In this blog, I am going to present to you a research focused on the second application that resulted in two papers presented in RecSys.
+</p>
 
 ## MOBA Games and Recommendation Problem
-
-The annual [report of Newzoo](https://strivesponsorship.com/wp-content/uploads/2020/03/Global-Esports-Market-Report-2020.pdf) shows that global e-sports revenues and its audience will grow to $1.1 billion and 495
+<p style='text-align: justify;'>
+The annual <a href="https://strivesponsorship.com/wp-content/uploads/2020/03/Global-Esports-Market-Report-2020.pdf">report of Newzoo</a> shows that global e-sports revenues and its audience will grow to $1.1 billion and 495
 million people in 2020, respectively. MOBA is one of the most significant social gaming genres contributing to
 that growth. An example of this phenomenon is the League of Legends World Championship, which was the biggest
 tournament of 2019 with more than 105 million hours live on Twitch and YouTube. This type of games can rise up to 64
-million active players per month worldwide, with over a billion monthly gaming hours, affirms [Forbes](https://www.forbes.com/sites/insertcoin/2014/01/27/riots-league-of-legends-reveals-astonishing-27-million-daily-players-67-million-monthly/#1461159b6d39).
-
+million active players per month worldwide, with over a billion monthly gaming hours, affirms <a href="https://www.forbes.com/sites/insertcoin/2014/01/27/riots-league-of-legends-reveals-astonishing-27-million-daily-players-67-million-monthly/#1461159b6d39">Forbes</a>.
+</p>
+<p style='text-align: justify;'>
 League of Legends (LoL) has dominated the market since 2012 and is considered one of the most popular electronic games. The game consists of two teams (red and blue) of five players each, that compete to be the first to destroy the enemy base. Each player controls one character (champion) that interacts with the rest through combats, which are carried out in a particular arena.
-
 <p align="center"> 
     <img src="https://upload.wikimedia.org/wikipedia/commons/d/dc/Map_of_MOBA.svg" width="300">
 	<center>
 	<figcaption>Typical MOBA map. Circles represent turrets. The green area is the jungle and the yellow area are the lanes. The corner areas are the team's base.</figcaption>
 	</center>
 </p>
-
+<p style='text-align: justify;'>
 The pace of the game is encouraged by an in-game currency reward system, which is used to buy items that increase the statistics and performance of the champion. This is one of the main ways for the players to increase their attack and defense power, thereby increasing their contribution to winning the game.
-
+</p>
+<p style='text-align: justify;'>
 This game presents at least two recommendation problems: champion and item recommendation, because there are more than 140 characters and around 240 items. Both the choice of champions and the items pose the challenge of the number of possible combinations, which users face making decisions based on experience. In this work, we focused on the second one.
-
+</p>
 <p align="center"> 
     <img src="/images/recsys-moba/moba_recsys_problem.png" width="250">
 	<center>
 	<figcaption>Example of two teams matchup and item recommendations for the Blue team.</figcaption>
 	</center>
 </p>
-
 
 ## Data Mining for Item Recommendation in MOBA Games
 
@@ -80,4 +81,3 @@ If you find this work useful for your research, please consider citing our paper
 	series = {RecSys ’19}
 }
 ```
-</p>
