@@ -30,10 +30,14 @@ The pace of the game is encouraged by an in-game currency reward system, which i
 
 This game presents at least two recommendation problems: champion and item recommendation, because there are more than 140 characters and around 240 items. Both the choice of champions and the items pose the challenge of the number of possible combinations, which users face making decisions based on experience. In this work, we focused on the second one.
 
+<center>
 <p align="center"> 
     <img src="/images/recsys-moba/moba_recsys_problem.png" width="300">
+	<center>
 	<figcaption>Example of two teams matchup and item recommendations for the Blue team.</figcaption>
+	</center>
 </p>
+</center>
 
 
 ## Data Mining for Item Recommendation in MOBA Games
