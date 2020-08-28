@@ -63,66 +63,13 @@ In order to tackle this task, we proposed a framework based on classical data mi
 
 
 ### Results
-<p align="center"> 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-wp8o{border-color:#000000;text-align:center;vertical-align:top}
-.tg .tg-mcqj{border-color:#000000;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-mqa1{border-color:#000000;font-weight:bold;text-align:center;vertical-align:top}
-.tg .tg-73oq{border-color:#000000;text-align:left;vertical-align:top}
-.tg .tg-fam6{border-color:#000000;text-align:center;text-decoration:underline;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-mcqj">Metric</th>
-    <th class="tg-mqa1">Apriori</th>
-    <th class="tg-mqa1">Eclat</th>
-    <th class="tg-mqa1">D Tree</th>
-    <th class="tg-mqa1">Logit</th>
-    <th class="tg-mqa1">ANN</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-73oq">F1@1</td>
-    <td class="tg-wp8o">0.18</td>
-    <td class="tg-wp8o">0.18</td>
-    <td class="tg-wp8o">0.21</td>
-    <td class="tg-wp8o">0.27</td>
-    <td class="tg-fam6">0.32</td>
-  </tr>
-  <tr>
-    <td class="tg-73oq">MAP@1</td>
-    <td class="tg-wp8o">0.43</td>
-    <td class="tg-wp8o">0.44</td>
-    <td class="tg-wp8o">0.52</td>
-    <td class="tg-wp8o">0.67</td>
-    <td class="tg-fam6">0.77</td>
-  </tr>
-  <tr>
-    <td class="tg-73oq">F1@6</td>
-    <td class="tg-wp8o">0.48</td>
-    <td class="tg-wp8o">0.48</td>
-    <td class="tg-wp8o">0.37</td>
-    <td class="tg-wp8o">0.47</td>
-    <td class="tg-fam6">0.56</td>
-  </tr>
-  <tr>
-    <td class="tg-73oq">MAP@6</td>
-    <td class="tg-wp8o">0.58</td>
-    <td class="tg-wp8o">0.59</td>
-    <td class="tg-wp8o">0.64</td>
-    <td class="tg-wp8o">0.71</td>
-    <td class="tg-fam6">0.78</td>
-  </tr>
-</tbody>
-</table>
-</p>
+
+| Metric | Apriori | Eclat | D Tree | Logit |  ANN |
+|--------|---------|-------|:------:|:-----:|:----:|
+| F1@1   | 0.18    | 0.18  |  0.21  |  0.27 | **0.32** |
+| MAP@1  | 0.43    | 0.44  |  0.52  |  0.67 | **0.77** |
+| F1@6   | 0.48    | 0.48  |  0.37  |  0.47 | **0.56** |
+| MAP@6  | 0.58    | 0.59  |  0.64  |  0.71 | **0.78** |
 
 ## Interpretable Contextual Team-aware Item Recommendation: Application in Multiplayer Online Battle Arena Games
 
@@ -136,66 +83,6 @@ In order to tackle this task, we proposed a framework based on classical data mi
 </p>
 
 ### Results
-<p style='text-align: justify;'>
-<style type="text/css">
-.tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;margin:0px auto;}
-.tg td{background-color:#fff;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
-  font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{background-color:#f0f0f0;border-color:#ccc;border-style:solid;border-width:1px;color:#333;
-  font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-wp8o{border-color:#000000;text-align:center;vertical-align:top}
-.tg .tg-mcqj{border-color:#000000;font-weight:bold;text-align:left;vertical-align:top}
-.tg .tg-mqa1{border-color:#000000;font-weight:bold;text-align:center;vertical-align:top}
-.tg .tg-73oq{border-color:#000000;text-align:left;vertical-align:top}
-.tg .tg-12k0{border-color:#000000;text-align:left;text-decoration:underline;vertical-align:top}
-</style>
-<table class="tg">
-<thead>
-  <tr>
-    <th class="tg-mcqj">Metric</th>
-    <th class="tg-mqa1">D Tree</th>
-    <th class="tg-mqa1">Logit</th>
-    <th class="tg-mqa1">ANN</th>
-    <th class="tg-mcqj">CNN</th>
-    <th class="tg-mcqj">TTIR</th>
-  </tr>
-</thead>
-<tbody>
-  <tr>
-    <td class="tg-73oq">F1@1</td>
-    <td class="tg-wp8o">0.21</td>
-    <td class="tg-wp8o">0.27</td>
-    <td class="tg-wp8o">0.32</td>
-    <td class="tg-73oq">0.33</td>
-    <td class="tg-12k0">0.34</td>
-  </tr>
-  <tr>
-    <td class="tg-73oq">MAP@1</td>
-    <td class="tg-wp8o">0.52</td>
-    <td class="tg-wp8o">0.67</td>
-    <td class="tg-wp8o">0.77</td>
-    <td class="tg-73oq">0.79</td>
-    <td class="tg-12k0">0.80</td>
-  </tr>
-  <tr>
-    <td class="tg-73oq">F1@6</td>
-    <td class="tg-wp8o">0.37</td>
-    <td class="tg-wp8o">0.47</td>
-    <td class="tg-wp8o">0.56</td>
-    <td class="tg-73oq">0.58</td>
-    <td class="tg-12k0">0.60</td>
-  </tr>
-  <tr>
-    <td class="tg-73oq">MAP@6</td>
-    <td class="tg-wp8o">0.64</td>
-    <td class="tg-wp8o">0.71</td>
-    <td class="tg-wp8o">0.78</td>
-    <td class="tg-73oq">0.79</td>
-    <td class="tg-12k0">0.81</td>
-  </tr>
-</tbody>
-</table>
-</p>
 
 | Metric | D Tree | Logit |  ANN | CNN  | TTIR |
 |--------|:------:|:-----:|:----:|------|------|
@@ -219,6 +106,23 @@ In order to tackle this task, we proposed a framework based on classical data mi
 
 If you find this work useful for your research, please consider citing our papers: 
 ```
+@inproceedings{10.1145/3298689.3346986,
+	author = {Araujo, Vladimir and Rios, Felipe and Parra, Denis},
+	title = {Data Mining for Item Recommendation in MOBA Games},
+	year = {2019},
+	isbn = {9781450362436},
+	publisher = {Association for Computing Machinery},
+	address = {New York, NY, USA},
+	url = {https://doi.org/10.1145/3298689.3346986},
+	doi = {10.1145/3298689.3346986},
+	booktitle = {Proceedings of the 13th ACM Conference on Recommender Systems},
+	pages = {393–397},
+	numpages = {5},
+	keywords = {item recommendation, MOBA games, data mining},
+	location = {Copenhagen, Denmark},
+	series = {RecSys ’19}
+}
+
 @inproceedings{10.1145/3298689.3346986,
 	author = {Araujo, Vladimir and Rios, Felipe and Parra, Denis},
 	title = {Data Mining for Item Recommendation in MOBA Games},
