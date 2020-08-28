@@ -54,6 +54,14 @@ This game presents at least two recommendation problems: champion <a href="https
 
 In order to tackle this task, we proposed a framework based on classical data mining methodology, including slight changes to use it for the recommendation task. This methodology allows generating recommendations using knowledge learned from the actions carried out by the users in previous matches.
 
+<p align="center"> 
+    <img src="/images/recsys-moba/framework.png" width="500">
+	<center>
+	<figcaption>Example of two teams matchup and item recommendations for the Blue team.</figcaption>
+	</center>
+</p>
+
+
 ### Results
 <p align="center"> 
 <style type="text/css">
@@ -119,9 +127,23 @@ In order to tackle this task, we proposed a framework based on classical data mi
 
 ### Transformer-based Architecture
 
+<p align="center"> 
+    <img src="/images/recsys-moba/model_ttir.png" width="500">
+	<center>
+	<figcaption>Example of two teams matchup and item recommendations for the Blue team.</figcaption>
+	</center>
+</p>
+
 ### Results
 
 ### Attention as Explanation
+
+<p align="center"> 
+    <img src="/images/recsys-moba/attention_matrix.png" width="500">
+	<center>
+	<figcaption>Example of two teams matchup and item recommendations for the Blue team.</figcaption>
+	</center>
+</p>
 
 ## Final Remarks
 
