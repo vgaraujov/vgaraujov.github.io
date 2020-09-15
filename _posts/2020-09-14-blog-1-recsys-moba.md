@@ -58,16 +58,14 @@ In order to tackle this task, we proposed a framework based on classical data mi
 	</center>
 </p>
 
-The frst step is preprocessing the dataset, which consists of filtering, reordering, and encoding. We then apply several techniques of data mining, both descriptive and predictive. Finally, we produce a ranking interpretation to perform the recommendation.
+The first step consists on preprocessing the dataset. We used a dataset provided by <a href="https://www.kaggle.com/paololol/league-of-legends-ranked-matches">Kaggle</a>. Because the purpose is a recommendation for a specifc champion, we decided to reorganize the data. The final dataset has transactional structure, where each instance includes the identifers of a selected champion during a match, the items used, and the enemies involved.
 
-#### Recommender System Based on Association Rules Mining
+The second step is to apply techniques of data mining, both descriptive and predictive. 
+On the one hand, we implement a recommender system based on association rules mining. We use Apriori
+and Eclat algorithms.
+On the other hand, for the recommender systems based on classifier, we used Decision Trees, Logistic Regression and Artificial Neural Network.
 
-This system consists of an association rules algorithm module that extracts and stores the frequent itemset of each champion. We used the Apriori and Eclat algorithms for this task.
-
-Through $X , Y = ϕAR (D | suppmin , confmin )$, the algorithm generates rules with the form $X → Y$ , where $Y$ is an enemy champion and $X$ is a subset of items. D is the transactional data of a picked champion composed of the enemy team and the items used.
-
-#### Recommender System Based on Classifers
-
+Finally, we produce a ranking interpretation to perform the recommendation.
 
 ### Results
 
