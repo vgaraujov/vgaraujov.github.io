@@ -80,7 +80,10 @@ As we expected ANN model outperforms the other approaches, achieving F1 of 56%, 
 
 ### Limitations
 
+This first work proposes a novel use of recommendation systems for the recommendation of elements in MOBA games. However, there are some limitations to address:
 
+* Models discard relevant information about the context of the parties. For example, it may be useful to use information from roles or teams.
+* In the context of MOBA games, an explanation of why a recommendation is given would be desirable.
 
 ## Interpretable Contextual Team-aware Item Recommendation: Application in Multiplayer Online Battle Arena Games
 
