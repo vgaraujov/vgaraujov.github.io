@@ -65,7 +65,7 @@ On the one hand, we implement a recommender system based on association rules mi
 and Eclat algorithms.
 On the other hand, for the recommender systems based on classifier, we used Decision Trees, Logistic Regression and Artificial Neural Network.
 
-Finally, we produce a ranking interpretation to perform the recommendation.
+Finally, in order to generate the itemset recommendation for the user, we use a sort function over the output of the recommender systems based on its probabilities.
 
 ### Results
 
