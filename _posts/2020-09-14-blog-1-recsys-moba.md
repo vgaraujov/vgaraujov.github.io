@@ -47,9 +47,6 @@ This game presents at least two recommendation problems: champion <a href="https
 
 ## Data Mining for Item Recommendation in MOBA Games
 
-
-
-
 ### Framework
 
 In order to tackle this task, we proposed a framework based on classical data mining methodology, including slight changes to use it for the recommendation task. This methodology allows generating recommendations using knowledge learned from the actions carried out by the users in previous matches.
@@ -60,6 +57,16 @@ In order to tackle this task, we proposed a framework based on classical data mi
 	<figcaption>Example of two teams matchup and item recommendations for the Blue team.</figcaption>
 	</center>
 </p>
+
+The frst step is preprocessing the dataset, which consists of filtering, reordering, and encoding. We then apply several techniques of data mining, both descriptive and predictive. Finally, we produce a ranking interpretation to perform the recommendation.
+
+#### Recommender System Based on Association Rules Mining
+
+This system consists of an association rules algorithm module that extracts and stores the frequent itemset of each champion. We used the Apriori and Eclat algorithms for this task.
+
+Through $X , Y = ϕAR (D | suppmin , confmin )$, the algorithm generates rules with the form $X → Y$ , where $Y$ is an enemy champion and $X$ is a subset of items. D is the transactional data of a picked champion composed of the enemy team and the items used.
+
+#### Recommender System Based on Classifers
 
 
 ### Results
