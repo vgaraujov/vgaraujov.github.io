@@ -62,12 +62,14 @@ The first step consists on preprocessing the dataset. We used a dataset provided
 
 The second step is to apply techniques of data mining, both descriptive and predictive. 
 On the one hand, we implement a recommender system based on association rules mining. We use Apriori
-and Eclat algorithms.
-On the other hand, for the recommender systems based on classifier, we used Decision Trees, Logistic Regression and Artificial Neural Network.
+and Eclat algorithms for this purpose.
+On the other hand, for the recommender systems based on a classifier, we use Decision Trees, Logistic Regression, and Artificial Neural Network.
 
 Finally, in order to generate the itemset recommendation for the user, we use a sort function over the output of the recommender systems based on its probabilities.
 
 ### Results
+
+As we expected ANN model outperforms the other approaches, achieving F1 of 56%, and MAP of 78%, while the worst was Apriori approach reaching F1 of 48%, and MAP of 58%. Also, ANN obtained the best MRR, which might indicate that this model recommends the first best situational-item.
 
 | Metric | Apriori | Eclat | D Tree | Logit |  ANN |
 |--------|---------|-------|:------:|:-----:|:----:|
@@ -75,6 +77,10 @@ Finally, in order to generate the itemset recommendation for the user, we use a 
 | MAP@1  | 0.43    | 0.44  |  0.52  |  0.67 | **0.77** |
 | F1@6   | 0.48    | 0.48  |  0.37  |  0.47 | **0.56** |
 | MAP@6  | 0.58    | 0.59  |  0.64  |  0.71 | **0.78** |
+
+### Limitations
+
+
 
 ## Interpretable Contextual Team-aware Item Recommendation: Application in Multiplayer Online Battle Arena Games
 
