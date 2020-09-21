@@ -89,9 +89,11 @@ If you want to explore the systems, you could find them here: https://github.com
 
 ## Interpretable Contextual Team-aware Item Recommendation: Application in Multiplayer Online Battle Arena Games
 
-
+As a second part of this project, we focus on how to exploit the additional information that appears in a match. Using the same framework and opting for the predictive approach, we decided to explore more advanced encoders. Motivated by the success of the <a href="https://arxiv.org/abs/1706.03762">Transformer</a> architecture in encoding different types of data, we decided to use it to obtain richer representations of the characters in a match.
 
 ### Transformer-based Architecture
+
+Figure shows the Transformer for Team-aware Item Recommendation architecture (TTIR). This model is made up of three major parts: the input representation layer, the encoder layer, and the output layer for recommendation. 
 
 <p align="center"> 
     <img src="/images/recsys-moba/model_ttir.png" width="750">
@@ -100,7 +102,11 @@ If you want to explore the systems, you could find them here: https://github.com
 	</center>
 </p>
 
+
+
 ### Results
+
+Our model achieves significant improvements compared to the baselines. The difference in performance between TTIR and other models is due to the ability of the Transformer to include relevant contextual information of the match into the representation of each champion.
 
 | Metric | D Tree | Logit |  ANN | CNN  | TTIR |
 |--------|:------:|:-----:|:----:|------|------|
@@ -109,7 +115,11 @@ If you want to explore the systems, you could find them here: https://github.com
 | F1@6   |  0.37  |  0.47 | 0.56 | 0.58 | **0.60** |
 | MAP@6  |  0.64  |  0.71 | 0.78 | 0.79 | **0.81** |
 
+We also performed an ablation analysis showing that the number of attention heads is more important than the number of layers for this application. In addition, it is shown that including enemy and role information (context information) contributes to better performance in the recommendations.
+
 ### Attention as Explanation
+
+Transformer attention weights commonly show what the model focused on to make a prediction. In the case of this recommendation system, we postulate that these values ​​could be used as an explanation of the recommendation for the user. 
 
 <p align="center"> 
     <img src="/images/recsys-moba/attention_matrix.png" width="750">
@@ -117,6 +127,8 @@ If you want to explore the systems, you could find them here: https://github.com
 	<figcaption>Visualization of the attention weights for each member of the Blue team on each member of both teams (bottom row).</figcaption>
 	</center>
 </p>
+
+The figure shows the characters involved in the match on the x-axis, and the characters to which items will be recommended on the y-axis. The heat map represents the influence that the champions had on a specific one to generate the recommendation. For example, <i>Zed</i> is heavily influenced by his opponent <i>Syndra</i>, and that explains why the <i>Maw of Malmortius</i> item were recommended.
 
 ## Final Remarks
 
