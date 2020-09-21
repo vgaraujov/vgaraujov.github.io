@@ -1,6 +1,6 @@
 ---
 title: 'Recommendation Systems for Item Recommendation in MOBA Games'
-date: 2020-09-14
+date: 2020-09-21
 permalink: /posts/2020/blog-1-recsys-moba/
 tags:
   - item recommendation
@@ -82,10 +82,14 @@ As we expected ANN model outperforms the other approaches, achieving F1 of 56%, 
 
 This first work proposes a novel use of recommendation systems for the recommendation of elements in MOBA games. However, there are some limitations to address:
 
-* Models discard relevant information about the context of the parties. For example, it may be useful to use information from roles or teams.
+* Models do not take advantage of relevant information about the context of the parties. For example, it may be useful to use information from roles or teams.
 * In the context of MOBA games, an explanation of why a recommendation is given would be desirable.
 
+If you want to explore the systems, you could find them here: https://github.com/vgaraujov/RecSysLoL
+
 ## Interpretable Contextual Team-aware Item Recommendation: Application in Multiplayer Online Battle Arena Games
+
+
 
 ### Transformer-based Architecture
 
@@ -137,20 +141,20 @@ If you find this work useful for your research, please consider citing our paper
 	series = {RecSys ’19}
 }
 
-@inproceedings{10.1145/3298689.3346986,
-	author = {Araujo, Vladimir and Rios, Felipe and Parra, Denis},
-	title = {Data Mining for Item Recommendation in MOBA Games},
-	year = {2019},
-	isbn = {9781450362436},
-	publisher = {Association for Computing Machinery},
-	address = {New York, NY, USA},
-	url = {https://doi.org/10.1145/3298689.3346986},
-	doi = {10.1145/3298689.3346986},
-	booktitle = {Proceedings of the 13th ACM Conference on Recommender Systems},
-	pages = {393–397},
-	numpages = {5},
-	keywords = {item recommendation, MOBA games, data mining},
-	location = {Copenhagen, Denmark},
-	series = {RecSys ’19}
+@inproceedings{10.1145/3383313.3412211,
+author = {Villa, Andr\'{e}s and Araujo, Vladimir and Cattan, Francisca and Parra, Denis},
+title = {Interpretable Contextual Team-Aware Item Recommendation: Application in Multiplayer Online Battle Arena Games},
+year = {2020},
+isbn = {9781450375832},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3383313.3412211},
+doi = {10.1145/3383313.3412211},
+booktitle = {Fourteenth ACM Conference on Recommender Systems},
+pages = {503–508},
+numpages = {6},
+keywords = {Item Recommendation, Deep Learning, MOBA Games},
+location = {Virtual Event, Brazil},
+series = {RecSys '20}
 }
 ```
