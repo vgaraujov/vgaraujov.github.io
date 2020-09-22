@@ -102,7 +102,13 @@ Figure shows the Transformer for Team-aware Item Recommendation architecture (TT
 	</center>
 </p>
 
-The input representation layer takes inspiration from the BERT model. We represent the information of a match by using three embeddings: champion <a href="https://www.codecogs.com/eqnedit.php?latex=E_{champ}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E_{champ}" title="E_{champ}" /></a>, role, and team.
+The input representation layer takes inspiration from the BERT model. We represent the information of a game using three types of embeddings: champion, role, and team. The sum of them is the actual input to the encoder layer.
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=E_{input}&space;=&space;E_{champ}&space;&plus;&space;E_{role}&space;&plus;&space;E_{team}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E_{input}&space;=&space;E_{champ}&space;&plus;&space;E_{role}&space;&plus;&space;E_{team}" title="E_{input} = E_{champ} + E_{role} + E_{team}" /></a>
+
+The encoder layer is the Transformer architecture, which returns the contextual embeddings of the match. The advantage of using this architecture is that it is possible to obtain contextual representations as well as attention vectors that could be used to analyze the predictions.
+
+The recommendation layer is a fully connected layer in charge of predicting the most probable element for each champion of a team.
 
 ### Results
 
