@@ -102,7 +102,7 @@ Figure shows the Transformer for Team-aware Item Recommendation architecture (TT
 	</center>
 </p>
 
-
+The input representation layer takes inspiration from the BERT model. We represent the information of a match by using three embeddings: champion <a href="https://www.codecogs.com/eqnedit.php?latex=E_{champ}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E_{champ}" title="E_{champ}" /></a>, role, and team.
 
 ### Results
 
@@ -142,6 +142,8 @@ Transformer architecture allow us to model the complex contextual relationships 
 and its attention weights serve to generate explanations for the suggested items. Our initial analysis indicates that expert users require more details for understanding and following the recommendations, while less experienced users find them coherent and useful.
 
 For future work, we consider providing more details in the explanations of our recommendations, such as the item statistics. Also sequential recommendation of items that could be used during an online game.
+
+If you want to explore the TTIR model, you could find them here: https://github.com/ojedaf/IC-TIR-Lol
 
 ## Citation
 
