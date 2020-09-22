@@ -130,6 +130,13 @@ Transformer attention weights commonly show what the model focused on to make a 
 
 The figure shows the characters involved in the match on the x-axis, and the characters to which items will be recommended on the y-axis. The heat map represents the influence that the champions had on a specific one to generate the recommendation. For example, <i>Zed</i> is heavily influenced by his opponent <i>Syndra</i>, and that explains why the <i>Maw of Malmortius</i> item were recommended.
 
+## User Survey
+
+In order to get insights from LoL players about the relevance of our recommendations and the visualization, we conducted a preliminary survey. The survey consisted of showing subjects four cases similar to the one displayed in Figure abouve. Subjects were told that they belonged to the Blue team and that they were facing the Red team. Then they had to judge the quality of the recommendations for the Blue team and the usefulness of the explanations provided by the heatmap.
+
+As a result, we observe that people have a fairly positive perception of the relevance of the recommendation, but this perception seems to be more favorable for less experienced users.
+
+
 ## Final Remarks
 
 ## Citation
