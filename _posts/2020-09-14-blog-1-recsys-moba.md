@@ -136,8 +136,12 @@ In order to get insights from LoL players about the relevance of our recommendat
 
 As a result, we observe that people have a fairly positive perception of the relevance of the recommendation, but this perception seems to be more favorable for less experienced users.
 
-
 ## Final Remarks
+
+Transformer architecture allow us to model the complex contextual relationships present in the matches,
+and its attention weights serve to generate explanations for the suggested items. Our initial analysis indicates that expert users require more details for understanding and following the recommendations, while less experienced users find them coherent and useful.
+
+For future work, we consider providing more details in the explanations of our recommendations, such as the item statistics. Also sequential recommendation of items that could be used during an online game.
 
 ## Citation
 
