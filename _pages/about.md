@@ -16,6 +16,7 @@ Previously, I received my master's degree from the Pontificia Universidad Javeri
 
 Recent News
 ======
+* October 15, 2020. ELAP scholarship for intern at Western University.
 * July 22, 2020. One paper accepted to RecSys 2020.
 * June 30, 2020. Two papers accepted to WiNLP 2020 Workshop co-located with ACL 2020.
 * February 11, 2020. One paper accepted to LREC 2020.
