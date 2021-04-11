@@ -80,9 +80,9 @@ As we expected ANN model outperforms the other approaches, achieving F1 of 56%, 
 
 ### Limitations
 
-This first work proposes a novel use of recommendation systems for the recommendation of elements in MOBA games. However, there are some limitations to address:
+This first work proposes a novel use of recommendation systems for the recommendation of items in MOBA games. However, there are some limitations to address:
 
-* Models do not take advantage of relevant information about the context of the parties. For example, it may be useful to use information from roles or teams.
+* Models do not take advantage of relevant information about the context of the matches. For example, it may be useful to use information from roles or teams.
 * In the context of MOBA games, an explanation of why a recommendation is given would be desirable.
 
 If you want to explore the systems, you could find them here: https://github.com/vgaraujov/RecSysLoL
@@ -93,7 +93,7 @@ As a second part of this project, we focus on how to exploit the additional info
 
 ### Transformer-based Architecture
 
-Figure shows the Transformer for Team-aware Item Recommendation architecture (TTIR). This model is made up of three major parts: the input representation layer, the encoder layer, and the output layer for recommendation. 
+The figure below shows the Transformer for Team-aware Item Recommendation architecture (TTIR). This model is made up of three major parts: the input representation layer, the encoder layer, and the output layer for recommendation. 
 
 <p align="center"> 
     <img src="/images/recsys-moba/model_ttir.png" width="750">
@@ -102,13 +102,13 @@ Figure shows the Transformer for Team-aware Item Recommendation architecture (TT
 	</center>
 </p>
 
-The input representation layer takes inspiration from the BERT model. We represent the information of a game using three types of embeddings: champion, role, and team. The sum of them is the actual input to the encoder layer.
+The **input representation layer** takes inspiration from the BERT model. We represent the information of a game using three types of embeddings: champion, role, and team. The sum of them is the actual input to the encoder layer.
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=E_{input}&space;=&space;E_{champ}&space;&plus;&space;E_{role}&space;&plus;&space;E_{team}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?E_{input}&space;=&space;E_{champ}&space;&plus;&space;E_{role}&space;&plus;&space;E_{team}" title="E_{input} = E_{champ} + E_{role} + E_{team}" /></a>
 
-The encoder layer is the Transformer architecture, which returns the contextual embeddings of the match. The advantage of using this architecture is that it is possible to obtain contextual representations as well as attention vectors that could be used to analyze the predictions.
+The **encoder layer** is a Transformer model, which returns the contextual embeddings of the match. The advantage of using this architecture is that it is possible to obtain contextual representations as well as attention vectors that could be used to analyze the predictions.
 
-The recommendation layer is a fully connected layer in charge of predicting the most probable element for each champion of a team.
+The **recommendation layer** is a fully connected layer in charge of predicting the most probable itemset for each champion of a team.
 
 ### Results
 
@@ -134,7 +134,7 @@ Transformer attention weights commonly show what the model focused on to make a 
 	</center>
 </p>
 
-The figure shows the characters involved in the match on the x-axis, and the characters to which items will be recommended on the y-axis. The heat map represents the influence that the champions had on a specific one to generate the recommendation. For example, <i>Zed</i> is heavily influenced by his opponent <i>Syndra</i>, and that explains why the <i>Maw of Malmortius</i> item were recommended.
+The figure above shows the characters involved in the match on the x-axis, and the characters to which items will be recommended on the y-axis. The heat map represents the influence that the champions had on a specific one to generate the recommendation. For example, <i>Zed</i> is heavily influenced by his opponent <i>Syndra</i>, and that explains why the <i>Maw of Malmortius</i> item were recommended.
 
 ## User Survey
 

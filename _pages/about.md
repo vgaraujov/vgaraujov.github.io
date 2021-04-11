@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a PhD student at [Pontificia Universidad Católica de Chile](https://www.ing.uc.cl/en/programas-de-estudio/postgrado/doctorado-ciencias-la-ingenieria/) and [IMFD](https://imfd.cl/en/), advised by Professor [Alvaro Soto](https://asoto.ing.puc.cl/).
+I am currently a PhD student at [Pontificia Universidad Católica de Chile](https://www.ing.uc.cl/en/programas-de-estudio/postgrado/doctorado-ciencias-la-ingenieria/) and [IMFD](https://imfd.cl/en/), advised by Professors [Alvaro Soto](https://asoto.ing.puc.cl/) and [Marie-Francine Moens](https://people.cs.kuleuven.be/~sien.moens/).
 
 My main research interests are in the area of ​​natural language processing and deep learning, specifically on how to extend current approaches with mechanisms inspired by human language processing.
 
