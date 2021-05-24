@@ -7,6 +7,10 @@ author_profile: true
 
 You can also find my articles on [my Google Scholar profile](https://scholar.google.com/citations?user=p4TbBLEAAAAJ&hl=en).
 
+<b>[Stress Test Evaluation of Biomedical Word Embeddings](https://aclanthology.org/2021.bionlp-1.13/)</b> <br> 
+<b>Vladimir Araujo</b>, Andrés Carvallo, Carlos Aspillaga, Camilo Thorne, Denis Parra.
+<i>Proceedings of the 20th Workshop on Biomedical Language Processing</i>. <b>NAACL 2021</b>.
+
 <b>[Interpretable Contextual Team-aware Item Recommendation: Application in Multiplayer Online Battle Arena Game](https://doi.org/10.1145/3383313.3412211)</b> <br> 
 Andrés Villa, <b>Vladimir Araujo</b>, Francisca Cattan, Denis Parra.
 <i>Proceedings of the 14th ACM Conference on Recommender Systems</i>. <b>RecSys 2020</b>. <a href="https://github.com/ojedaf/IC-TIR-Lol">(source code)</a>.

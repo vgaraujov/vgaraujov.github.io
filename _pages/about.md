@@ -16,6 +16,8 @@ Previously, I received my master's degree from the Pontificia Universidad Javeri
 
 Recent News
 ======
+* May 19, 2021. Admitted to [Mexican NLP Summer School 2021](https://ampln.github.io/escuelaverano2021/)
+* April 13, 2021. One paper accepted to BioNLP Workshop co-located with NAACL 2021.
 * October 15, 2020. ELAP scholarship for intern at Western University.
 * July 22, 2020. One paper accepted to RecSys 2020.
 * June 30, 2020. Two papers accepted to WiNLP 2020 Workshop co-located with ACL 2020.
