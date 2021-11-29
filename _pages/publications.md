@@ -7,6 +7,14 @@ author_profile: true
 
 You can also find my articles on [my Google Scholar profile](https://scholar.google.com/citations?user=p4TbBLEAAAAJ&hl=en).
 
+<b>[Augmenting BERT-style Models with Predictive Coding to Improve Discourse-level Representations](https://aclanthology.org/2021.emnlp-main.240/)</b> <br> 
+<b>Vladimir Araujo</b>, Andrés Villa, Marcelo Mendoza, Marie-Francine Moens, Alvaro Soto.
+<i>Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing</i>. <b>EMNLP 2021</b>.
+
+<b>[TNT: Text-Conditioned Network with Transductive Inference for Few-Shot Video Classification](https://www.bmvc2021-virtualconference.com/assets/papers/1200.pdf)</b> <br> 
+Andres Villa, Juan-Manuel Perez-Rua, <b>Vladimir Araujo</b>, Juan Carlos Niebles, Victor Escorcia, Alvaro Soto.
+<i>Proceedings of the 32nd British Machine Vision Conference</i>. <b>BMVC 2021</b>.
+
 <b>[Stress Test Evaluation of Biomedical Word Embeddings](https://aclanthology.org/2021.bionlp-1.13/)</b> <br> 
 <b>Vladimir Araujo</b>, Andrés Carvallo, Carlos Aspillaga, Camilo Thorne, Denis Parra.
 <i>Proceedings of the 20th Workshop on Biomedical Language Processing</i>. <b>NAACL 2021</b>.
