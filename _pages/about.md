@@ -16,8 +16,9 @@ Previously, I received my master's degree from the Pontificia Universidad Javeri
 
 Recent News
 ======
+* February 1, 2022. Received a Google Research Award ([LARA 2021](https://research.google/outreach/featured-research-collaborations/latin-america-research-awards/recipients/)).
 * August 25, 2021. One paper accepted to EMNLP 2021.
-* May 19, 2021. Admitted to [Mexican NLP Summer School 2021](https://ampln.github.io/escuelaverano2021/)
+* May 19, 2021. Admitted to [Mexican NLP Summer School 2021](https://ampln.github.io/escuelaverano2021/).
 * April 13, 2021. One paper accepted to BioNLP Workshop co-located with NAACL 2021.
 * October 15, 2020. ELAP scholarship for intern at Western University.
 * July 22, 2020. One paper accepted to RecSys 2020.
