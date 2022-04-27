@@ -10,12 +10,13 @@ redirect_from:
 
 I am currently a PhD student at [Pontificia Universidad Católica de Chile](https://www.ing.uc.cl/en/programas-de-estudio/postgrado/doctorado-ciencias-la-ingenieria/) and [KU Leuven](https://eng.kuleuven.be/en/research/phd), advised by Professors [Alvaro Soto](https://asoto.ing.puc.cl/) and [Marie-Francine Moens](https://people.cs.kuleuven.be/~sien.moens/).
 
-My main research interests are natural language processing and deep learning, mainly extending current approaches with mechanisms inspired by human language processing.
+My main research interest is Deep Learning for Natural Language Processing, specifically on how to extend current approaches with mechanisms inspired by human language processing.
 
 Previously, I received my master's degree from the Pontificia Universidad Javeriana focused on machine learning and serious games.
 
 Recent News
 ======
+* April 11, 2022. One paper accepted to CLVision Workshop co-located with CVPR 2022.
 * April 4, 2022. Two papers accepted to LREC 2022.
 * March 28, 2022. One paper accepted to NLP-Power Workshop co-located with ACL 2022.
 * February 1, 2022. Received a Google Research Award ([LARA 2021](https://research.google/outreach/featured-research-collaborations/latin-america-research-awards/recipients/)).
