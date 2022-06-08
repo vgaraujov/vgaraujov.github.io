@@ -16,6 +16,7 @@ Previously, I received my master's degree from the Pontificia Universidad Javeri
 
 Recent News
 ======
+* May 11, 2022. One paper accepted to GMAP Workshop co-located with UMAP 2022.
 * April 11, 2022. One paper accepted to CLVision Workshop co-located with CVPR 2022.
 * April 4, 2022. Two papers accepted to LREC 2022.
 * March 28, 2022. One paper accepted to NLP-Power Workshop co-located with ACL 2022.
