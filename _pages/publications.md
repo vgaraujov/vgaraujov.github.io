@@ -7,6 +7,22 @@ author_profile: true
 
 You can also find my articles on [my Google Scholar profile](https://scholar.google.com/citations?user=p4TbBLEAAAAJ&hl=en).
 
+<b>[Entropy-based Stability-Plasticity for Lifelong Learning](https://openaccess.thecvf.com/content/CVPR2022W/CLVision/html/Araujo_Entropy-Based_Stability-Plasticity_for_Lifelong_Learning_CVPRW_2022_paper.html)</b> <br> 
+<b>Vladimir Araujo</b>, Julio Hurtado, Alvaro Soto, Marie-Francine Moens.
+<i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops</i>. <b>CVPR 2022</b>.
+
+<b>[Evaluation Benchmarks for Spanish Sentence Representations](https://arxiv.org/abs/2204.07571)</b> <br> 
+<b>Vladimir Araujo</b>, Andrés Carvallo, Souvik Kundu, José Cañete, Marcelo Mendoza, Robert E Mercer, Felipe Bravo-Marquez, Marie-Francine Moens, Alvaro Soto.
+<i>Proceedings of The 13th Language Resources and Evaluation Conference</i>. <b>LREC 2022</b>.
+
+<b>[ALBETO and DistilBETO: Lightweight Spanish Language Models](https://arxiv.org/abs/2204.09145)</b> <br> 
+José Cañete, Sebastián Donoso, Felipe Bravo-Marquez, Andrés Carvallo, <b>Vladimir Araujo</b>.
+<i>Proceedings of The 13th Language Resources and Evaluation Conference</i>. <b>LREC 2022</b>.
+
+<b>[DACT-BERT: Differentiable Adaptive Computation Time for an Efficient BERT Inference](https://aclanthology.org/2022.nlppower-1.10/)</b> <br> 
+Cristobal Eyzaguirre, Felipe del Rio, <b>Vladimir Araujo</b>, Alvaro Soto.
+<i>Proceedings of The First Workshop on Efficient Benchmarking in NLP</i>. <b>ACL 2022</b>.
+
 <b>[Augmenting BERT-style Models with Predictive Coding to Improve Discourse-level Representations](https://aclanthology.org/2021.emnlp-main.240/)</b> <br> 
 <b>Vladimir Araujo</b>, Andrés Villa, Marcelo Mendoza, Marie-Francine Moens, Alvaro Soto.
 <i>Proceedings of the 2021 Conference on Empirical Methods in Natural Language Processing</i>. <b>EMNLP 2021</b>.
