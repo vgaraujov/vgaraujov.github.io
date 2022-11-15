@@ -7,9 +7,9 @@ author_profile: true
 
 You can also find my articles on [my Google Scholar profile](https://scholar.google.com/citations?user=p4TbBLEAAAAJ&hl=en).
 
-<b>[Entropy-based Stability-Plasticity for Lifelong Learning](https://openaccess.thecvf.com/content/CVPR2022W/CLVision/html/Araujo_Entropy-Based_Stability-Plasticity_for_Lifelong_Learning_CVPRW_2022_paper.html)</b> <br> 
-<b>Vladimir Araujo</b>, Julio Hurtado, Alvaro Soto, Marie-Francine Moens.
-<i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops</i>. <b>CVPR 2022</b>.
+<b>[How Relevant is Selective Memory Population in Lifelong Language Learning?](https://arxiv.org/abs/2210.00940)</b> <br> 
+<b>Vladimir Araujo</b>, Helena Balabin, Julio Hurtado, Alvaro Soto, Marie-Francine Moens.
+<i>Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing</i>. <b>AACL 2022</b>.
 
 <b>[Evaluation Benchmarks for Spanish Sentence Representations](https://arxiv.org/abs/2204.07571)</b> <br> 
 <b>Vladimir Araujo</b>, Andrés Carvallo, Souvik Kundu, José Cañete, Marcelo Mendoza, Robert E Mercer, Felipe Bravo-Marquez, Marie-Francine Moens, Alvaro Soto.
