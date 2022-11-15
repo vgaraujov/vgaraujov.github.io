@@ -16,6 +16,7 @@ Previously, I received my master's degree from the Pontificia Universidad Javeri
 
 Recent News
 ======
+* November 11, 2022. Received a scholarship for attending [Khipu 2023](https://khipu.ai/).
 * September 21, 2022. One paper accepted to AACL 2022.
 * May 11, 2022. One paper accepted to GMAP Workshop co-located with UMAP 2022.
 * April 11, 2022. One paper accepted to CLVision Workshop co-located with CVPR 2022.
