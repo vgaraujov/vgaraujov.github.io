@@ -11,6 +11,14 @@ You can also find my articles on [my Google Scholar profile](https://scholar.goo
 <b>Vladimir Araujo</b>, Helena Balabin, Julio Hurtado, Alvaro Soto, Marie-Francine Moens.
 <i>Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing</i>. <b>AACL 2022</b>.
 
+<b>[Hierarchical Transformers for Group-Aware Sequential Recommendation: Application in MOBA Games](https://dl.acm.org/doi/abs/10.1145/3511047.3537667)</b> <br> 
+<b>Vladimir Araujo</b>, Helem Salinas, Alvaro Labarca, Andres Villa, Denis Parra.
+<i>UMAP '22 Adjunct: Adjunct Proceedings of the 30th ACM Conference on User Modeling, Adaptation and Personalization</i>. <b>UMAP 2022</b>.
+
+<b>[Entropy-based Stability-Plasticity for Lifelong Learning](https://openaccess.thecvf.com/content/CVPR2022W/CLVision/html/Araujo_Entropy-Based_Stability-Plasticity_for_Lifelong_Learning_CVPRW_2022_paper.html)</b> <br> 
+<b>Vladimir Araujo</b>, Julio Hurtado, Alvaro Soto, Marie-Francine Moens.
+<i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops</i>. <b>CVPR 2022</b>.
+
 <b>[Evaluation Benchmarks for Spanish Sentence Representations](https://arxiv.org/abs/2204.07571)</b> <br> 
 <b>Vladimir Araujo</b>, Andrés Carvallo, Souvik Kundu, José Cañete, Marcelo Mendoza, Robert E Mercer, Felipe Bravo-Marquez, Marie-Francine Moens, Alvaro Soto.
 <i>Proceedings of The 13th Language Resources and Evaluation Conference</i>. <b>LREC 2022</b>.
