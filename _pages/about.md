@@ -22,7 +22,7 @@ Recent News
 * April 11, 2022. One paper accepted to CLVision Workshop co-located with CVPR 2022.
 * April 4, 2022. Two papers accepted to LREC 2022.
 * March 28, 2022. One paper accepted to NLP-Power Workshop co-located with ACL 2022.
-* February 1, 2022. Received a Google Research Award ([LARA 2021](https://research.google/outreach/featured-research-collaborations/latin-america-research-awards/recipients/)).
+* February 1, 2022. Received a Google Research Award ([LARA 2021](https://twitter.com/GoogleChile/status/1491834358088581121?s=20&t=2vNbnb5LewiM0uBcI_8wGg)).
 * August 25, 2021. One paper accepted to EMNLP 2021.
 * May 19, 2021. Admitted to [Mexican NLP Summer School 2021](https://ampln.github.io/escuelaverano2021/).
 * April 13, 2021. One paper accepted to BioNLP Workshop co-located with NAACL 2021.
