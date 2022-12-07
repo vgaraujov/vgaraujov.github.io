@@ -7,7 +7,7 @@ author_profile: true
 
 You can also find my articles on [my Google Scholar profile](https://scholar.google.com/citations?user=p4TbBLEAAAAJ&hl=en).
 
-<b>[How Relevant is Selective Memory Population in Lifelong Language Learning?](https://arxiv.org/abs/2210.00940)</b> <br> 
+<b>[How Relevant is Selective Memory Population in Lifelong Language Learning?](https://aclanthology.org/2022.aacl-short.20/)</b> <br> 
 <b>Vladimir Araujo</b>, Helena Balabin, Julio Hurtado, Alvaro Soto, Marie-Francine Moens.
 <i>Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing</i>. <b>AACL 2022</b>.
 
@@ -19,11 +19,11 @@ You can also find my articles on [my Google Scholar profile](https://scholar.goo
 <b>Vladimir Araujo</b>, Julio Hurtado, Alvaro Soto, Marie-Francine Moens.
 <i>Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) Workshops</i>. <b>CVPR 2022</b>.
 
-<b>[Evaluation Benchmarks for Spanish Sentence Representations](https://arxiv.org/abs/2204.07571)</b> <br> 
+<b>[Evaluation Benchmarks for Spanish Sentence Representations](https://aclanthology.org/2022.lrec-1.648/)</b> <br> 
 <b>Vladimir Araujo</b>, Andrés Carvallo, Souvik Kundu, José Cañete, Marcelo Mendoza, Robert E Mercer, Felipe Bravo-Marquez, Marie-Francine Moens, Alvaro Soto.
 <i>Proceedings of The 13th Language Resources and Evaluation Conference</i>. <b>LREC 2022</b>.
 
-<b>[ALBETO and DistilBETO: Lightweight Spanish Language Models](https://arxiv.org/abs/2204.09145)</b> <br> 
+<b>[ALBETO and DistilBETO: Lightweight Spanish Language Models](https://aclanthology.org/2022.lrec-1.457/)</b> <br> 
 José Cañete, Sebastián Donoso, Felipe Bravo-Marquez, Andrés Carvallo, <b>Vladimir Araujo</b>.
 <i>Proceedings of The 13th Language Resources and Evaluation Conference</i>. <b>LREC 2022</b>.
 
