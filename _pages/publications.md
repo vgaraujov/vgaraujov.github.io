@@ -7,6 +7,10 @@ author_profile: true
 
 You can also find my articles on [my Google Scholar profile](https://scholar.google.com/citations?user=p4TbBLEAAAAJ&hl=en).
 
+<b>[Learning Sentence-Level Representations with Predictive Coding](https://www.mdpi.com/2504-4990/5/1/5)</b> <br> 
+<b>Vladimir Araujo</b>, Marie-Francine Moens, Alvaro Soto.
+<i>Machine Learning and Knowledge Extraction</i>. <b>MAKE 2023</b>.
+
 <b>[How Relevant is Selective Memory Population in Lifelong Language Learning?](https://aclanthology.org/2022.aacl-short.20/)</b> <br> 
 <b>Vladimir Araujo</b>, Helena Balabin, Julio Hurtado, Alvaro Soto, Marie-Francine Moens.
 <i>Proceedings of the 2nd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics and the 11th International Joint Conference on Natural Language Processing</i>. <b>AACL 2022</b>.
