@@ -10,13 +10,7 @@ redirect_from:
 
 I am currently a Postdoctoral researcher at [ESAT-PSI, KU Leuven](https://www.esat.kuleuven.be/psi), under the guidance of [Tinne Tuytelaars](https://www.esat.kuleuven.be/psi/TT) and [Marie-Francine Moens](https://people.cs.kuleuven.be/~sien.moens/). My primary research focuses on Language Models and Continual Learning.
 
-I have recently completed a joint PhD program from the Pontificia Universidad Católica de Chile and KU Leuven under the guidance of Professors [Alvaro Soto](https://asoto.ing.puc.cl/) and [Marie-Francine Moens](https://people.cs.kuleuven.be/~sien.moens/). My research was dedicated to enhancing language models by incorporating insights drawn from human language processing. During this time, I was affiliated with esteemed laboratories and institutions such as [LIIR](https://liir.cs.kuleuven.be/), [IALab](https://ialab.ing.puc.cl/), [IMFD](https://imfd.cl/en/), and [CENIA](https://www.cenia.cl/en/home/). Before my doctoral studies, I earned a master's degree from the Pontificia Universidad Javeriana, specializing in machine learning and serious games.
-
-
-
-
-
-
+I have completed a joint PhD program from the Pontificia Universidad Católica de Chile and KU Leuven under the guidance of Professors [Alvaro Soto](https://asoto.ing.puc.cl/) and [Marie-Francine Moens](https://people.cs.kuleuven.be/~sien.moens/). My research was dedicated to enhancing language models by incorporating insights drawn from human language processing. During this time, I was affiliated with esteemed laboratories and institutions such as [LIIR](https://liir.cs.kuleuven.be/), [IALab](https://ialab.ing.puc.cl/), [IMFD](https://imfd.cl/en/), and [CENIA](https://www.cenia.cl/en/home/). Before my doctoral studies, I earned a master's from the Pontificia Universidad Javeriana, specializing in machine learning and serious games.
 
 Recent News
 ======
@@ -29,6 +23,7 @@ Recent News
 * April 4, 2022. Two papers accepted to LREC 2022.
 * March 28, 2022. One paper accepted to NLP-Power Workshop co-located with ACL 2022.
 * February 1, 2022. Received a Google Research Award ([LARA 2021](https://research.google/outreach/past-programs/latin-america-research-awards/)).
+
 <!---
 * August 25, 2021. One paper accepted to EMNLP 2021.
 * May 19, 2021. Admitted to [Mexican NLP Summer School 2021](https://ampln.github.io/escuelaverano2021/).
