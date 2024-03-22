@@ -8,9 +8,9 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a Postdoctoral researcher at [ESAT-PSI, KU Leuven](https://www.esat.kuleuven.be/psi), under the guidance of [Tinne Tuytelaars](https://www.esat.kuleuven.be/psi/TT) and [Marie-Francine Moens](https://people.cs.kuleuven.be/~sien.moens/). My primary research focuses on Language Models and Continual Learning.
+I am a Postdoctoral researcher at [ESAT-PSI, KU Leuven](https://www.esat.kuleuven.be/psi), working under the guidance of [Tinne Tuytelaars](https://www.esat.kuleuven.be/psi/TT) and [Marie-Francine Moens](https://people.cs.kuleuven.be/~sien.moens/). My current research focuses on Language Models and Continual Learning.
 
-I have completed a joint PhD program from the Pontificia Universidad Católica de Chile and KU Leuven under the guidance of Professors [Alvaro Soto](https://asoto.ing.puc.cl/) and [Marie-Francine Moens](https://people.cs.kuleuven.be/~sien.moens/). My research was dedicated to enhancing language models by incorporating insights drawn from human language processing. During this time, I was affiliated with esteemed laboratories and institutions such as [LIIR](https://liir.cs.kuleuven.be/), [IALab](https://ialab.ing.puc.cl/), [IMFD](https://imfd.cl/en/), and [CENIA](https://www.cenia.cl/en/home/). Before my doctoral studies, I earned a master's from the Pontificia Universidad Javeriana, specializing in robotics and machine learning.
+I completed a joint PhD program from Pontificia Universidad Católica de Chile and KU Leuven under the supervision of Professors [Alvaro Soto](https://asoto.ing.puc.cl/) and [Marie-Francine Moens](https://people.cs.kuleuven.be/~sien.moens/). My research focused on improving language models by integrating insights from human language processing. Throughout this period, I was associated with respected laboratories and institutions, including [LIIR](https://liir.cs.kuleuven.be/), [IALab](https://ialab.ing.puc.cl/), [IMFD](https://imfd.cl/en/), and [CENIA](https://www.cenia.cl/en/home/). Prior to my doctoral studies, I obtained a master’s degree from Pontificia Universidad Javeriana, specializing in robotics and machine learning.
 
 Recent News
 ======
