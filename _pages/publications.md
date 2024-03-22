@@ -7,9 +7,21 @@ author_profile: true
 
 You can also find my articles on [my Google Scholar profile](https://scholar.google.com/citations?user=p4TbBLEAAAAJ&hl=en).
 
+<b>[SemEval-2024 Task 1: Semantic Textual Relatedness](https://semantic-textual-relatedness.github.io/)</b> <br> 
+Nedjma Ousidhoum, Shamsuddeen Hassan Muhammad, Mohamed Abdalla, Idris Abdulmumin, Ibrahim Said Ahmad, Sanchit Ahuja, Alham Fikri Aji, <b>Vladimir Araujo</b>, Meriem Beloucif, Christine De Kock, Oumaima Hourrane, Manish Shrivastava, Thamar Solorio, Nirmal Surange, Krishnapriya Vishnubhotla, Seid Muhie Yimam, Saif M Mohammad.
+<i>Proceedings of the 18th International Workshop on Semantic Evaluation (SemEval-2024)</i>. <b>NAACL 2024</b>.
+
+<b>[Sequence-to-Sequence Spanish Pre-trained Language Models](https://arxiv.org/abs/2309.11259)</b> <br> 
+<b>Vladimir Araujo</b>, Maria Mihaela Trusca, Rodrigo Tufiño, Marie-Francine Moens.
+<i>Proceedings of the 14th Language Resources and Evaluation Conference and the 30th International Conference on Computational Linguistics</i>. <b>LREC-Coling 2024</b>. <a href="https://github.com/vgaraujov/Seq2Seq-Spanish-PLMs">(source code)</a>.
+
+<b>[A Memory Model for Question Answering from Streaming Data Supported by Rehearsal and Anticipation of Coreference Information](https://aclanthology.org/2023.findings-acl.830/)</b> <br> 
+<b>Vladimir Araujo</b>, Alvaro Soto, Marie-Francine Moens.
+<i>Findings of the Association for Computational Linguistics</i>. <b>ACL 2023</b>.
+
 <b>[Learning Sentence-Level Representations with Predictive Coding](https://www.mdpi.com/2504-4990/5/1/5)</b> <br> 
 <b>Vladimir Araujo</b>, Marie-Francine Moens, Alvaro Soto.
-<i>Machine Learning and Knowledge Extraction</i>. <b>MAKE 2023</b>.
+<i>Machine Learning and Knowledge Extraction</i>. <b>MAKE 2023</b>. <a href="https://github.com/vgaraujov/PredBERT">(source code)</a>.
 
 <b>[How Relevant is Selective Memory Population in Lifelong Language Learning?](https://aclanthology.org/2022.aacl-short.20/)</b> <br> 
 <b>Vladimir Araujo</b>, Helena Balabin, Julio Hurtado, Alvaro Soto, Marie-Francine Moens.
@@ -17,7 +29,7 @@ You can also find my articles on [my Google Scholar profile](https://scholar.goo
 
 <b>[Hierarchical Transformers for Group-Aware Sequential Recommendation: Application in MOBA Games](https://dl.acm.org/doi/abs/10.1145/3511047.3537667)</b> <br> 
 <b>Vladimir Araujo</b>, Helem Salinas, Alvaro Labarca, Andres Villa, Denis Parra.
-<i>UMAP '22 Adjunct: Adjunct Proceedings of the 30th ACM Conference on User Modeling, Adaptation and Personalization</i>. <b>UMAP 2022</b>.
+<i>UMAP '22 Adjunct: Adjunct Proceedings of the 30th ACM Conference on User Modeling, Adaptation and Personalization</i>. <b>UMAP 2022</b>. <a href="https://github.com/vgaraujov/HT4Rec-RecSysMOBA">(source code)</a>.
 
 <b>[Entropy-based Stability-Plasticity for Lifelong Learning](https://openaccess.thecvf.com/content/CVPR2022W/CLVision/html/Araujo_Entropy-Based_Stability-Plasticity_for_Lifelong_Learning_CVPRW_2022_paper.html)</b> <br> 
 <b>Vladimir Araujo</b>, Julio Hurtado, Alvaro Soto, Marie-Francine Moens.
