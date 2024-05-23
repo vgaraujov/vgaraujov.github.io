@@ -13,7 +13,7 @@ Nedjma Ousidhoum, Shamsuddeen Hassan Muhammad, Mohamed Abdalla, Idris Abdulmumin
 
 <b>[Sequence-to-Sequence Spanish Pre-trained Language Models](https://arxiv.org/abs/2309.11259)</b> <br> 
 <b>Vladimir Araujo</b>, Maria Mihaela Trusca, Rodrigo Tufiño, Marie-Francine Moens.
-<i>Proceedings of the 14th Language Resources and Evaluation Conference and the 30th International Conference on Computational Linguistics</i>. <b>LREC-Coling 2024</b>. <a href="https://github.com/vgaraujov/Seq2Seq-Spanish-PLMs">(source code)</a>.
+<i>Proceedings of the 14th Language Resources and Evaluation Conference and the 30th International Conference on Computational Linguistics</i>. <b>LREC-Coling 2024</b>. <a href="https://github.com/vgaraujov/Seq2Seq-Spanish-PLMs">(source code)</a> <a href="/files/LRECColingS2SSpanishPLM.pptx">(presentation)</a>.
 
 <b>[A Memory Model for Question Answering from Streaming Data Supported by Rehearsal and Anticipation of Coreference Information](https://aclanthology.org/2023.findings-acl.830/)</b> <br> 
 <b>Vladimir Araujo</b>, Alvaro Soto, Marie-Francine Moens.
