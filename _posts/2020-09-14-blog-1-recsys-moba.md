@@ -1,7 +1,7 @@
 ---
 title: 'Recommendation Systems for Item Recommendation in MOBA Games'
 date: 2020-09-21
-permalink: /posts/2020/blog-1-recsys-moba/
+permalink: /posts/2020/blog-recsys-moba/
 tags:
   - item recommendation
   - recommendation system
