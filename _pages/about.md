@@ -9,6 +9,7 @@ redirect_from:
 ---
 
 I'm an AI researcher at [Sailplane](https://www.sailplane.ai), where I work on developing AI agents for software engineering. My research and development focuses on improving agents' ability to understand developers' intent and to learn to perform complex tasks with and without fine-tuning.
+
 Previously, I was a postdoctoral researcher associate at [ESAT-PSI, KU Leuven](https://www.esat.kuleuven.be/psi), working under the guidance of [Tinne Tuytelaars](https://www.esat.kuleuven.be/psi/TT) and [Marie-Francine Moens](https://people.cs.kuleuven.be/~sien.moens/) on continual learning and parameter-efficient fine-tuning for language models. 
 
 I completed my joint PhD at KU Leuven and Pontificia Universidad Católica de Chile under the supervision of Professors [Alvaro Soto](https://asoto.ing.puc.cl/) and [Marie-Francine Moens](https://people.cs.kuleuven.be/~sien.moens/), focusing on improving language models by integrating insights from human language processing. Throughout my academic career, I was associated with several research laboratories, including [LIIR](https://liir.cs.kuleuven.be/), [IALab](https://ialab.ing.puc.cl/), [IMFD](https://imfd.cl/en/), and [CENIA](https://www.cenia.cl/en/home/).
