@@ -1,6 +1,5 @@
 ---
-title: "Teaching"
-collection: teaching
+title: "Teaching Experience"
 permalink: /teaching/
 ---
 
