@@ -1,8 +1,8 @@
 ---
-title: "Teaching Experience"
+title: "Teaching"
 collection: teaching
 type: "Sessional Lecturer"
-permalink: /teaching/teaching-experience
+permalink: /teaching/
 date: 2025-11-01
 location: "Chile · Remote"
 ---
