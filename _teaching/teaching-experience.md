@@ -1,6 +1,8 @@
 ---
-title: "Teaching Experience"
+title: "Teaching"
 permalink: /teaching/
+layout: single
+author_profile: true
 ---
 
 ## Centro Nacional de Inteligencia Artificial
