@@ -16,11 +16,11 @@ I completed my joint PhD at KU Leuven and Pontificia Universidad Católica de Ch
 
 As someone originally from Quito, Ecuador, I’m especially committed to advancing NLP for Spanish. I’ve contributed to the development of open Spanish language models such as [ALBETO, DistilBETO](https://aclanthology.org/2022.lrec-1.457/), [BARTO and T5S](https://aclanthology.org/2024.lrec-main.1283/). I’ve also been involved in creating several datasets, including [SemRel2024](https://aclanthology.org/2024.findings-acl.147/), [CVQA](https://proceedings.neurips.cc/paper_files/paper/2024/hash/1568882ba1a50316e87852542523739c-Abstract-Datasets_and_Benchmarks_Track.html), [BRIGHTER](https://aclanthology.org/2025.acl-long.436/). These efforts aim to support accessible, high-quality resources for research and applications in Spanish NLP.
 
-Recent News
+<!-- Recent News
 ======
 * May, 2025. Our paper "[BRIGHTER: BRIdging the Gap in Human-Annotated Textual Emotion Recognition Datasets for 28 Languages](https://aclanthology.org/2025.acl-long.436/)" has been accepted at ACL 2025.
 * Sept, 2024. Our paper "[Learning to Route for Dynamic Adapter Composition in Continual Learning with Language Models](https://aclanthology.org/2024.findings-emnlp.38/)" has been accepted at EMNLP 2024.
-* Sept, 2024. Our paper "[CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark](https://proceedings.neurips.cc/paper_files/paper/2024/hash/1568882ba1a50316e87852542523739c-Abstract-Datasets_and_Benchmarks_Track.html)" has been accepted at NeurIPS 2024.
+* Sept, 2024. Our paper "[CVQA: Culturally-diverse Multilingual Visual Question Answering Benchmark](https://proceedings.neurips.cc/paper_files/paper/2024/hash/1568882ba1a50316e87852542523739c-Abstract-Datasets_and_Benchmarks_Track.html)" has been accepted at NeurIPS 2024. -->
 
 
 <!---

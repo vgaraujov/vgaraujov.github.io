@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Vladimir's Homepage"
 title_separator          : "-"
 name                     : &name "Vladimir Araujo"
-description              : &description "PhD Student in Computer Science"
+description              : &description "AI and NLP Researcher"
 url                      : https://vgaraujov.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "vgaraujov/vgaraujov.github.io"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Vladimir Araujo"
   avatar           : "profile.jpg"
-  bio              : "PhD Student in Computer Science"
-  location         : "Leuven, Belgium"
+  bio              : "AI and NLP Researcher"
+  location         :
   employer         :
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=p4TbBLEAAAAJ&hl=en"
