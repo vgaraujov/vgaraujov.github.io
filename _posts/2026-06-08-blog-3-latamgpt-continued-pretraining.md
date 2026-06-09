@@ -9,9 +9,8 @@ tags:
   - benchmarks
   - Spanish NLP
 ---
-
 <p style='text-align: justify;'>
-In February 2026, <a href="https://www.france24.com/en/live-news/20260210-latam-gpt-a-latin-american-ai-to-combat-us-centric-bias">LatamGPT was presented</a> to a wave of regional enthusiasm: the first open large language model built <em>from and for</em> Latin America and the Caribbean, coordinated by Chile's CENIA with CAF, AWS and more than sixty institutions across the region. The promise was sovereignty and cultural relevance—moving Latin America from a consumer of foreign models to a producer of its own. When the model's <a href="https://x.com/OmarUFlorez/status/2061550655173787796?s=20">open weights were released on June 1, 2026</a>, though, they arrived without a single benchmark number. As someone who has spent years working on continued pre-training and continual learning—on how to keep teaching a model new things without it quietly forgetting what it already knew—that absence nagged at me. So I decided to run the comparison myself, and to ask the question the release skipped: what did continued pre-training actually buy, and what did it cost?
+In February 2026, <a href="https://www.france24.com/en/live-news/20260210-latam-gpt-a-latin-american-ai-to-combat-us-centric-bias">LatamGPT was presented</a> to a wave of regional enthusiasm: the first open large language model built <em>from and for</em> Latin America and the Caribbean, coordinated by Chile's CENIA and more than sixty institutions across the region. The promise was sovereignty and cultural relevance—moving Latin America from a consumer of foreign models to a producer of its own. When the model's <a href="https://www.linkedin.com/posts/omar-u-florez_latamgpt-share-7467314002256257025-L45F/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAChwVRIBWACWa4EEAL8junUYPOgV6dVR1yI">open weights were released on June 1, 2026</a>, though, they arrived without a single benchmark number. As someone who has spent years working on continued pre-training and continual learning—on how to keep teaching a model new things without it quietly forgetting what it already knew—that absence nagged at me. So I decided to run the comparison myself, and to ask the question the release skipped: what did continued pre-training actually buy, and what did it cost?
 </p>
 
 ## What LatamGPT actually is
@@ -37,18 +36,33 @@ The numbers show the tax plainly. On general academic benchmarks <em>in Spanish<
 	</center>
 </p>
 
+<p style='text-align: justify;'>
+The exact numbers behind the left side of that chart:
+</p>
+
+| General benchmark (Spanish) | Shots | n | Metric | LatamGPT 70B | Llama 3.1 70B | Gemma 4 31B | Qwen3.6 27B |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| MMLU-ProX (es) | 5 | 11,759 | EM | 45.81 | 61.48 | **82.86** | 77.82 |
+| MGSM native-CoT (es) | 8 | 250 | EM | 78.80 | 88.80 | **90.80** | 86.80 |
+| EQ-Bench (es) | 0 | 168 | EQ-Bench | 68.95 | 75.35 | **78.06** | 77.70 |
+| HeadQA (es) | 0 | 2,742 | Acc | 51.17 | 50.40 | 20.97 | **52.04** |
+
+<p style='text-align: justify;'>
+EM = exact match, Acc = accuracy; EQ-Bench uses its own 0–100 scale. Bold marks the best score per row. LatamGPT lands below its Llama 3.1 base on every row except HeadQA—and well behind the two newer, smaller models (Gemma's HeadQA score aside; see the note at the end).
+</p>
+
 ## Where it pays off: local knowledge
 
 <p style='text-align: justify;'>
 Now the other side of the ledger. CHOCLO—<a href="https://www.linkedin.com/posts/andres-carvallo-b5836a33a_latam-gptchoclo-datasets-at-hugging-face-share-7449581534673633280-elg4/">another CENIA release from the same Latam-GPT effort</a>, openly available <a href="https://huggingface.co/latam-gpt">on Hugging Face</a>—is a 104,847-question benchmark of Latin American cultural knowledge (food, flora and fauna, geography, traditions, public figures) spanning the region's countries and graded by a single external judge so that all models are directly comparable. Here, LatamGPT is the <strong>best model in the table</strong>: 39.5 binary-equivalence, edging out its base (37.6) and clearly ahead of the newer models (Gemma 4 31B at 31.3, Qwen3.6 27B at 27.1). And the lead is consistent across difficulty levels:
 </p>
 
-| CHOCLO (single external judge) | LatamGPT 70B | Llama 3.1 70B | Gemma 4 31B | Qwen3.6 27B |
-|---|---|---|---|---|
-| Overall | **39.5** | 37.6 | 31.3 | 27.1 |
-| Fácil (easy) | **59.8** | 57.1 | 48.4 | 45.1 |
-| Intermedia | **33.9** | 32.3 | 24.3 | 20.7 |
-| Difícil (hard) | **24.9** | 23.6 | 21.3 | 15.6 |
+| CHOCLO (single external judge) | LatamGPT 70B   | Llama 3.1 70B | Gemma 4 31B | Qwen3.6 27B |
+| ------------------------------ | -------------- | ------------- | ----------- | ----------- |
+| Overall                        | **39.5** | 37.6          | 31.3        | 27.1        |
+| Fácil (easy)                  | **59.8** | 57.1          | 48.4        | 45.1        |
+| Intermedia                     | **33.9** | 32.3          | 24.3        | 20.7        |
+| Difícil (hard)                | **24.9** | 23.6          | 21.3        | 15.6        |
 
 <p style='text-align: justify;'>
 This is the result that justifies the effort. Local cultural knowledge does not fall out of scale or recency—Gemma and Qwen are newer and strong, and they still lose here, because the relevant facts about a Chilean dish or a Peruvian tradition were simply never in their training data. You cannot reason your way to knowledge you were never shown. The regional corpus put that knowledge in, and CHOCLO can see it. The honest summary of the two tables together: continued pre-training bought a real, measurable gain on exactly the thing it was built for—and paid for it with a broad regression everywhere else.
@@ -77,16 +91,18 @@ None of this diminishes what LatamGPT accomplished: a large, multi-country colla
 ## A note on the numbers
 
 <p style='text-align: justify;'>
-I use MMLU-ProX (es) as the MMLU number because it is fully Spanish. I drop both MMLU-Redux variants on purpose: their answer options were left in English while only the questions were translated, so they are really Spanish-question / English-option tests—code-switched, not the Spanish-only evaluation I wanted (the small 5-shot Redux row is worse still, a single subject at n=100). HeadQA is included for completeness, but Gemma 4 31B's score there (≈21, below chance) is almost certainly an evaluation artifact rather than a real capability gap. CHOCLO is scored by one external judge (gpt-5.4-mini) applied identically to all four models, so those columns are directly comparable; the "self-judged" variants, where each model grades its own output, are not, and I do not use them here.
+All numbers come from two open evaluation frameworks: the Spanish academic benchmarks were run with EleutherAI's <a href="https://github.com/EleutherAI/lm-evaluation-harness/">lm-evaluation-harness</a>, and CHOCLO's LLM-as-judge scoring with <a href="https://github.com/confident-ai/deepeval">DeepEval</a>. I use MMLU-ProX (es) as the MMLU number because it is fully Spanish. I drop both MMLU-Redux variants on purpose: their answer options were left in English while only the questions were translated, so they are really Spanish-question / English-option tests—code-switched, not the Spanish-only evaluation I wanted (the small 5-shot Redux row is worse still, a single subject at n=100). HeadQA is included for completeness, but Gemma 4 31B's score there (≈21, below chance) is almost certainly an evaluation artifact rather than a real capability gap. CHOCLO is scored by one external judge (gpt-5.4-mini) applied identically to all four models, so those columns are directly comparable; the "self-judged" variants, where each model grades its own output, are not, and I do not use them here.
 </p>
 
 ## References
 
 - LatamGPT model card: [latam-gpt/Llama-3.1-70B-LatamGPT-SFT-1.0](https://huggingface.co/latam-gpt/Llama-3.1-70B-LatamGPT-SFT-1.0) and the [Latam-GPT organization](https://huggingface.co/latam-gpt) on Hugging Face.
-- Omar U. Flórez (2026). [*LatamGPT open-weights release announcement (June 1, 2026)*](https://x.com/OmarUFlorez/status/2061550655173787796?s=20).
+- Omar U. Flórez (2026). [*LatamGPT open-weights release announcement (June 1, 2026)*](https://www.linkedin.com/posts/omar-u-florez_latamgpt-share-7467314002256257025-L45F/).
 - Andrés Carvallo (2026). [*Latam-GPT / CHOCLO datasets on Hugging Face*](https://www.linkedin.com/posts/andres-carvallo-b5836a33a_latam-gptchoclo-datasets-at-hugging-face-share-7449581534673633280-elg4/).
 - France24 (2026). [*Latam-GPT: a Latin American AI to combat US-centric bias*](https://www.france24.com/en/live-news/20260210-latam-gpt-a-latin-american-ai-to-combat-us-centric-bias).
 - Brookings (2026). [*Latam-GPT and the search for AI sovereignty*](https://www.brookings.edu/articles/latam-gpt-and-the-search-for-ai-sovereignty/).
 - Rest of World (2025). [*Latin America is building LatamGPT to rival ChatGPT*](https://restofworld.org/2025/chatgpt-latin-america-alternative-latamgpt/).
 - Vladimir Araujo, Andrés Villa, Marcelo Mendoza, Marie-Francine Moens, and Alvaro Soto. 2021. [*Augmenting BERT-style Models with Predictive Coding to Improve Discourse-level Representations*](https://aclanthology.org/2021.emnlp-main.240/). EMNLP 2021.
 - Vladimir Araujo, Marie-Francine Moens, and Tinne Tuytelaars. 2024. [*Learning to Route for Dynamic Adapter Composition in Continual Learning with Language Models*](https://aclanthology.org/2024.findings-emnlp.38/). Findings of EMNLP 2024.
+- EleutherAI. [*lm-evaluation-harness*](https://github.com/EleutherAI/lm-evaluation-harness/) (academic benchmark evaluation).
+- Confident AI. [*DeepEval*](https://github.com/confident-ai/deepeval) (LLM-as-judge evaluation, used for CHOCLO).
