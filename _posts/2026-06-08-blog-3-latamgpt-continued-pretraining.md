@@ -54,32 +54,28 @@ EM = exact match, Acc = accuracy; EQ-Bench uses its own 0–100 scale. Bold mark
 ## Where it pays off: Latin American knowledge
 
 <p style='text-align: justify;'>
-Now the other side of the ledger. CHOCLO—<a href="https://www.linkedin.com/posts/te-invitamos-a-nuestro-pr%C3%B3ximo-webinar-donde-ugcPost-7450985197631791105-XLKo/">another CENIA release from the same Latam-GPT effort</a>, openly available <a href="https://huggingface.co/datasets/latam-gpt/CHOCLO">on Hugging Face</a>—is a 104,847-question benchmark of Latin American cultural knowledge (food, flora and fauna, geography, traditions, public figures) spanning the region's countries. CHOCLO ships a hybrid evaluation (lexical overlap, embedding similarity, and an LLM-as-judge); I report the LLM-as-judge part as a binary call—a single external judge decides, for each answer, whether it is semantically equivalent to the reference, and the score is simply the share judged equivalent. Because the same judge grades all four models, the numbers are directly comparable. Here, LatamGPT is the <strong>best model in the table</strong>: 39.5% of its answers are judged equivalent to the gold reference, edging out its base (37.6) and clearly ahead of the newer models (Gemma 4 31B at 31.3, Qwen3.6 27B at 27.1). And the lead is consistent across difficulty levels:
+Now the other side of the ledger. CHOCLO—<a href="https://www.linkedin.com/posts/te-invitamos-a-nuestro-pr%C3%B3ximo-webinar-donde-ugcPost-7450985197631791105-XLKo/">another CENIA release from the same Latam-GPT effort</a>, openly available <a href="https://huggingface.co/datasets/latam-gpt/CHOCLO">on Hugging Face</a>—is a 104,847-question benchmark of Latin American cultural knowledge (food, flora and fauna, geography, traditions, public figures) spanning the region's countries. I score it with an LLM judge that rules each answer equivalent to the reference answer or not; the number is the share judged equivalent (the judging setup and its caveats are in the note at the end). Here, LatamGPT is the <strong>best model</strong>: 39.5% of its answers are judged equivalent, edging out its base (37.6) and clearly ahead of the newer models (Gemma 4 31B at 31.3, Qwen3.6 27B at 27.1)—and that lead holds at every difficulty level.
 </p>
-
-| CHOCLO — binary semantic equivalence (%) | LatamGPT 70B   | Llama 3.1 70B | Gemma 4 31B | Qwen3.6 27B |
-| ----------------------------------------- | -------------- | ------------- | ----------- | ----------- |
-| Overall                                   | **39.5** | 37.6          | 31.3        | 27.1        |
-| Fácil (easy)                             | **59.8** | 57.1          | 48.4        | 45.1        |
-| Intermedia (intermediate)                 | **33.9** | 32.3          | 24.3        | 20.7        |
-| Difícil (hard)                           | **24.9** | 23.6          | 21.3        | 15.6        |
 
 <p style='text-align: justify;'>
 This is the result that justifies the effort. Latin American cultural knowledge does not fall out of scale or recency—Gemma and Qwen are newer and strong, and they still lose here, because the relevant facts about a Chilean dish or a Peruvian tradition were simply never in their training data. You cannot reason your way to knowledge you were never shown. The regional corpus put that knowledge in, and CHOCLO can see it.
 </p>
 
 <p style='text-align: justify;'>
-But it does not win <em>every</em> cultural test. <a href="https://huggingface.co/datasets/latam-gpt/Trueque-Benchmark-beta-0.1">Trueque</a>—a smaller, human-reviewed collaborative Latin American QA benchmark (500 questions in this beta, scored the same way: a single external judge making a binary semantic-equivalence call)—tells a more mixed story. LatamGPT again beats its own base (54.2 vs. 51.6) and Qwen (46.0), so the edge the regional corpus gives it over Llama 3.1 holds. But here Gemma 4 31B wins outright, and not by a little: 67.0 to LatamGPT's 54.2. On CHOCLO's long-tail, machine-generated facts the regional data is decisive; on Trueque's broader, human-reviewed questions, a stronger and newer general model pulls ahead despite never being trained on the region.
+But it does not win <em>every</em> cultural test. <a href="https://huggingface.co/datasets/latam-gpt/Trueque-Benchmark-beta-0.1">Trueque</a>—a smaller, human-reviewed collaborative Latin American QA benchmark (500 questions in this beta, scored the same way)—tells a more mixed story. LatamGPT again beats its own base (54.2 vs. 51.6) and Qwen (46.0), so the edge the regional corpus gives it over Llama 3.1 holds. But here Gemma 4 31B wins outright, and not by a little: 67.0 to LatamGPT's 54.2. On CHOCLO's long-tail, machine-generated facts the regional data is decisive; on Trueque's broader, human-reviewed questions, a stronger and newer general model pulls ahead despite never being trained on the region.
 </p>
 
 <p style='text-align: justify;'>
-Side by side, the two Latin American benchmarks (overall, same single-judge scoring):
+Both benchmarks side by side, with CHOCLO broken out by difficulty:
 </p>
 
-| Overall — binary semantic equivalence (%) | LatamGPT 70B   | Llama 3.1 70B | Gemma 4 31B    | Qwen3.6 27B |
-| ------------------------------------------ | -------------- | ------------- | -------------- | ----------- |
-| CHOCLO (n = 104,847)                       | **39.5** | 37.6          | 31.3           | 27.1        |
-| Trueque (n = 500, beta)                    | 54.2           | 51.6          | **67.0** | 46.0        |
+| Binary semantic equivalence (%) | LatamGPT 70B | Llama 3.1 70B | Gemma 4 31B | Qwen3.6 27B |
+| --- | --- | --- | --- | --- |
+| CHOCLO — Overall (n = 104,847) | **39.5** | 37.6 | 31.3 | 27.1 |
+| — Fácil (easy) | **59.8** | 57.1 | 48.4 | 45.1 |
+| — Intermedia | **33.9** | 32.3 | 24.3 | 20.7 |
+| — Difícil (hard) | **24.9** | 23.6 | 21.3 | 15.6 |
+| Trueque — Overall (n = 500, beta) | 54.2 | 51.6 | **67.0** | 46.0 |
 
 <p style='text-align: justify;'>
 The honest summary of all of it: continued pre-training bought a consistent edge over the base model on Latin American knowledge—and an outright win on CHOCLO—but not enough to beat a much stronger, newer model on every cultural benchmark, and it paid for that edge with a broad regression on general ability.
@@ -108,7 +104,7 @@ None of this diminishes what LatamGPT accomplished: a large, multi-country colla
 ## A note on the numbers
 
 <p style='text-align: justify;'>
-Some caveats on methodology. Every benchmark here is in Spanish, and the prompts used both to generate the models' answers and to judge them were written in Spanish too. The academic benchmarks were run with EleutherAI's <a href="https://github.com/EleutherAI/lm-evaluation-harness/">lm-evaluation-harness</a>; CHOCLO and Trueque were scored with <a href="https://github.com/confident-ai/deepeval">DeepEval</a>, using a single external judge (gpt-5.4-mini) applied identically to every model, so those columns are comparable across models. My LLM-as-judge setup may not exactly reproduce what the dataset authors intended—the repositories don't document the judging methodology in full detail—so the absolute CHOCLO and Trueque scores are best read as internally consistent rather than official. I use MMLU-ProX (es) as the MMLU number because it is fully Spanish. Gemma 4 31B and Qwen3.6 27B were evaluated with reasoning ("thinking") disabled—standard inference. Finally, every result here comes from a single run; the one exception is Gemma 4 31B on HeadQA, which I ran three times and which returned ≈21 (below chance) every time—almost certainly an evaluation artifact rather than a real capability gap.
+Some caveats on methodology. Every benchmark here is in Spanish, and the prompts used both to generate the models' answers and to judge them were written in Spanish too. The academic benchmarks were run with EleutherAI's <a href="https://github.com/EleutherAI/lm-evaluation-harness/">lm-evaluation-harness</a>; CHOCLO and Trueque were scored with <a href="https://github.com/confident-ai/deepeval">DeepEval</a>, using a single external judge (gpt-5.4-mini) applied identically to every model, so those columns are comparable across models. CHOCLO's own evaluation is a hybrid (lexical overlap, embedding similarity, and an LLM-as-judge); I report only the LLM-as-judge part, as a binary equivalent/not decision. My LLM-as-judge setup may not exactly reproduce what the dataset authors intended—the repositories don't document the judging methodology in full detail—so the absolute CHOCLO and Trueque scores are best read as internally consistent rather than official. I use MMLU-ProX (es) as the MMLU number because it is fully Spanish. Gemma 4 31B and Qwen3.6 27B were evaluated with reasoning ("thinking") disabled—standard inference. Finally, every result here comes from a single run; the one exception is Gemma 4 31B on HeadQA, which I ran three times and which returned ≈21 (below chance) every time—almost certainly an evaluation artifact rather than a real capability gap.
 </p>
 
 ## References
