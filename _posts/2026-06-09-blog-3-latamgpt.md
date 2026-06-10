@@ -2,7 +2,7 @@
 title: "What LatamGPT Knows (and Doesn't): An Early Benchmark Preview"
 date: 2026-06-09
 permalink: /posts/2026/blog-latamgpt-benchmarks/
-excerpt: "CENIA released LatamGPT's weights without benchmarks, and the technical report isn't out yet—so here's an early, independent look at how it does on Spanish tasks and on CENIA's new cultural benchmarks, CHOCLO and Trueque."
+excerpt: "CENIA released LatamGPT's weights without benchmarks, and the technical report isn't out yet—so here's an early, independent look at how it does on Spanish tasks and on CENIA's new cultural benchmarks."
 tags:
   - LatamGPT
   - benchmarks
@@ -19,7 +19,7 @@ In February 2026, <a href="https://www.france24.com/en/live-news/20260210-latam-
 ## What LatamGPT is, and what I compared it to
 
 <p style='text-align: justify;'>
-<a href="https://huggingface.co/latam-gpt/Llama-3.1-70B-LatamGPT-SFT-1.0">LatamGPT</a> starts from Meta's Llama 3.1 70B (the base model) and adapts it in two stages: <em>continued pre-training</em> (CPT) on roughly <a href="https://aibusiness.com/generative-ai/the-new-open-source-ai-model-for-latin-america">230 billion words</a> of permissioned regional text—Spanish, Portuguese and Indigenous languages—followed by supervised fine-tuning (SFT) for instruction following. The released model, then, is an instruct model—and that shapes the comparison: the fair yardstick isn't GPT-5 or some abstract ideal, but other instruct models of similar or smaller size. I line it up against three: Meta's own <strong>Llama 3.1 70B Instruct</strong> (built from the very same base), and two newer, smaller models, <strong>Gemma 4 31B</strong> and <strong>Qwen3.6 27B</strong>. All four are instruct models, evaluated the same way.
+<a href="https://huggingface.co/latam-gpt/Llama-3.1-70B-LatamGPT-SFT-1.0">LatamGPT</a> starts from Meta's Llama 3.1 70B (the base model) and adapts it in two stages: <em>continued pre-training</em> (CPT) on roughly <a href="https://aibusiness.com/generative-ai/the-new-open-source-ai-model-for-latin-america">230 billion words</a> of permissioned regional text—Spanish, Portuguese and Indigenous languages—followed by supervised fine-tuning (SFT) for instruction following. The released model, then, is an instruct model—and that shapes the comparison: the fair yardstick isn't GPT-5 or some abstract ideal, but other instruct models of similar or smaller size. I line it up against three: Meta's own <strong>Llama 3.1 70B Instruct</strong> (built from the very same base), and two newer, smaller models, <strong>Gemma 4 31B</strong> and <strong>Qwen3.6 27B</strong>. <strong>All four are instruct models</strong>, evaluated the same way.
 </p>
 
 <p style='text-align: justify;'>
@@ -103,7 +103,7 @@ None of this is a verdict—it's an early read, and the official report may shar
 ## A note on the numbers
 
 <p style='text-align: justify;'>
-A few caveats. Every benchmark is in Spanish—both the answer-generation and the judging prompts. Academic benchmarks ran on EleutherAI's <a href="https://github.com/EleutherAI/lm-evaluation-harness/">lm-evaluation-harness</a>; CHOCLO and Trueque were scored with <a href="https://github.com/confident-ai/deepeval">DeepEval</a> using one external judge (gpt-5.4-mini) applied identically to every model, so those columns are comparable. CHOCLO's native evaluation is a hybrid (lexical, embedding, LLM-as-judge); I report only the LLM-as-judge part, as a binary equivalent/not call, and since the repos don't fully document their judging, treat the absolute CHOCLO/Trueque scores as internally consistent rather than official. All four models are instruct models; the Llama baseline is <code>Llama-3.1-70B-Instruct</code>. LatamGPT itself is <code>Llama-3.1-70B</code> (base) + CPT + SFT; the CPT-only checkpoint isn't public, so I compare released instruct models and can't isolate the CPT step. MMLU-ProX (es) is my MMLU number because it's fully Spanish. Gemma 4 31B and Qwen3.6 27B ran with reasoning ("thinking") off. Every result is a single run, except Gemma 4 31B on HeadQA, which I ran three times—≈21 (below chance) each time, almost certainly an evaluation artifact.
+A few caveats. Every benchmark is in Spanish—both the answer-generation and the judging prompts. Academic benchmarks ran on EleutherAI's <a href="https://github.com/EleutherAI/lm-evaluation-harness/">lm-evaluation-harness</a>; CHOCLO and Trueque were scored with <a href="https://github.com/confident-ai/deepeval">DeepEval</a> using one external judge (gpt-5.4-mini) applied identically to every model, so those columns are comparable. CHOCLO's native evaluation is a hybrid (lexical, embedding, LLM-as-judge); I report only the LLM-as-judge part, as a binary equivalent/not call, and since the repos don't fully document their judging, treat the absolute CHOCLO/Trueque scores as internally consistent rather than official. All four models are instruct models; the Llama baseline is <code>Llama-3.1-70B-Instruct</code>. LatamGPT itself is <code>Llama-3.1-70B</code> (base) + CPT + SFT; the CPT-only checkpoint isn't public, so I compare released instruct models and can't isolate the CPT step. MMLU-ProX (es) is my MMLU number because it's fully Spanish. Gemma 4 31B and Qwen3.6 27B ran with reasoning ("thinking") off. Every result is a single run, except Gemma 4 31B on HeadQA, which I ran three times—≈21 (below chance) each time, perhaps an evaluation artifact.
 </p>
 
 ## References
@@ -121,3 +121,7 @@ A few caveats. Every benchmark is in Spanish—both the answer-generation and th
 - Vladimir Araujo, Marie-Francine Moens, and Tinne Tuytelaars. 2024. [*Learning to Route for Dynamic Adapter Composition in Continual Learning with Language Models*](https://aclanthology.org/2024.findings-emnlp.38/). Findings of EMNLP 2024.
 - EleutherAI. [*lm-evaluation-harness*](https://github.com/EleutherAI/lm-evaluation-harness/) (academic benchmark evaluation).
 - Confident AI. [*DeepEval*](https://github.com/confident-ai/deepeval) (LLM-as-judge evaluation, used for CHOCLO and Trueque).
+
+
+Co-Authored-By: Claude Opus 4.8
+
