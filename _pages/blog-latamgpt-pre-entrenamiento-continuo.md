@@ -2,6 +2,7 @@
 permalink: /posts/2026/blog-latamgpt-pre-entrenamiento-continuo/
 title: 'Conocimiento latinoamericano a un precio: una lectura de LatamGPT a través de sus benchmarks'
 author_profile: true
+published: false
 ---
 
 <p style="text-align:center;"><em><a href="/posts/2026/blog-latamgpt-continued-pretraining/">Read in English</a></em></p>
