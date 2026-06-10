@@ -29,14 +29,7 @@ Here's how the four models stack up across every benchmark I ran:
 <p align="center">
     <img src="/images/latamgpt-benchmarks-styled-pastel.png" width="760">
 	<center>
-	<figcaption><strong>Option A — pastel, vertical bars.</strong> Latin American knowledge (CHOCLO, Trueque) on the left; general Spanish benchmarks on the right.</figcaption>
-	</center>
-</p>
-
-<p align="center">
-    <img src="/images/latamgpt-benchmarks-styled-h-pastel.png" width="560">
-	<center>
-	<figcaption><strong>Option B — pastel, portrait.</strong> Same data; Latin American knowledge on top, general benchmarks below.</figcaption>
+	<figcaption>Latin American knowledge benchmarks on the left, general Spanish benchmarks on the right. LatamGPT tops CHOCLO and edges Llama 3.1 Instruct on both cultural sets—though Gemma takes the smaller, human-reviewed Trueque—while trailing the comparison models on the general benchmarks (except HeadQA, where Gemma's score looks like an evaluation artifact).</figcaption>
 	</center>
 </p>
 

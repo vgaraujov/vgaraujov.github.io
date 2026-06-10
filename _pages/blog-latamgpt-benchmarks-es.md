@@ -22,7 +22,7 @@ Así se comparan los cuatro modelos en todos los benchmarks que corrí:
 <p align="center">
     <img src="/images/latamgpt-benchmarks-es.png" width="760">
 	<center>
-	<figcaption>En los benchmarks generales en español (izquierda), LatamGPT (rojo) queda por debajo del Llama 3.1 70B Instruct de Meta (azul) y de los dos modelos más nuevos y pequeños—salvo en HeadQA, donde quedan parejos (y el puntaje de Gemma parece un artefacto de evaluación). En los benchmarks culturales del CENIA (derecha) la cosa cambia: LatamGPT encabeza CHOCLO con claridad, aunque Gemma se queda con Trueque, más pequeño y revisado por humanos.</figcaption>
+	<figcaption>Los benchmarks de conocimiento latinoamericano a la izquierda; los benchmarks generales en español a la derecha. LatamGPT encabeza CHOCLO y supera a Llama 3.1 Instruct en los dos sets culturales —aunque Gemma se queda con Trueque, más pequeño y revisado por humanos— y queda por detrás de los modelos de comparación en los benchmarks generales (salvo en HeadQA, donde el puntaje de Gemma parece un artefacto de evaluación).</figcaption>
 	</center>
 </p>
 
