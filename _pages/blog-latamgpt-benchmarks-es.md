@@ -114,3 +114,5 @@ Algunas aclaraciones. Todos los benchmarks están en español—tanto los prompt
 - Vladimir Araujo, Marie-Francine Moens, and Tinne Tuytelaars. 2024. [*Learning to Route for Dynamic Adapter Composition in Continual Learning with Language Models*](https://aclanthology.org/2024.findings-emnlp.38/). Findings of EMNLP 2024.
 - EleutherAI. [*lm-evaluation-harness*](https://github.com/EleutherAI/lm-evaluation-harness/) (evaluación de benchmarks académicos).
 - Confident AI. [*DeepEval*](https://github.com/confident-ai/deepeval) (evaluación con LLM como juez, usada para CHOCLO y Trueque).
+
+<p style="text-align:center; color:#999; font-size:0.85em;"><em>Co-Authored-By: Claude</em></p>
