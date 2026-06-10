@@ -1,5 +1,5 @@
 ---
-title: 'Local Knowledge at a Price: Reading LatamGPT Through Its Benchmarks'
+title: 'Latin American Knowledge at a Price: Reading LatamGPT Through Its Benchmarks'
 date: 2026-06-08
 permalink: /posts/2026/blog-latamgpt-continued-pretraining/
 tags:
@@ -32,7 +32,7 @@ The numbers show the tax plainly. On general academic benchmarks <em>in Spanish<
 <p align="center">
     <img src="/images/latamgpt-benchmarks.png" width="760">
 	<center>
-	<figcaption>On the academic benchmarks (left), LatamGPT (red) trails its own base, Llama 3.1 70B (blue), and the two newer, smaller models lead both—except on HeadQA, where it edges its base (and Gemma's score looks like an evaluation artifact). On CHOCLO (right), the benchmark it was built for, the picture flips.</figcaption>
+	<figcaption>On the academic benchmarks (left), LatamGPT (red) trails its own base, Llama 3.1 70B (blue), and the two newer, smaller models lead both—except on HeadQA, where it edges its base (and Gemma's score looks like an evaluation artifact). On the Latin American knowledge benchmarks (right), it beats its base on both CHOCLO and Trueque and tops CHOCLO outright—though Gemma still wins the smaller, human-reviewed Trueque.</figcaption>
 	</center>
 </p>
 
@@ -51,27 +51,44 @@ The exact numbers behind the left side of that chart:
 EM = exact match, Acc = accuracy; EQ-Bench uses its own 0–100 scale. Bold marks the best score per row. LatamGPT lands below its Llama 3.1 base on every row except HeadQA—and well behind the two newer, smaller models (Gemma's HeadQA score aside; see the note at the end).
 </p>
 
-## Where it pays off: local knowledge
+## Where it pays off: Latin American knowledge
 
 <p style='text-align: justify;'>
-Now the other side of the ledger. CHOCLO—<a href="https://www.linkedin.com/posts/andres-carvallo-b5836a33a_latam-gptchoclo-datasets-at-hugging-face-share-7449581534673633280-elg4/">another CENIA release from the same Latam-GPT effort</a>, openly available <a href="https://huggingface.co/latam-gpt">on Hugging Face</a>—is a 104,847-question benchmark of Latin American cultural knowledge (food, flora and fauna, geography, traditions, public figures) spanning the region's countries. CHOCLO ships a hybrid evaluation (lexical overlap, embedding similarity, and an LLM-as-judge); I report the LLM-as-judge part as a binary call—a single external judge decides, for each answer, whether it is semantically equivalent to the reference, and the score is simply the share judged equivalent. Because the same judge grades all four models, the numbers are directly comparable. Here, LatamGPT is the <strong>best model in the table</strong>: 39.5% of its answers are judged equivalent to the gold reference, edging out its base (37.6) and clearly ahead of the newer models (Gemma 4 31B at 31.3, Qwen3.6 27B at 27.1). And the lead is consistent across difficulty levels:
+Now the other side of the ledger. CHOCLO—<a href="https://www.linkedin.com/posts/te-invitamos-a-nuestro-pr%C3%B3ximo-webinar-donde-ugcPost-7450985197631791105-XLKo/">another CENIA release from the same Latam-GPT effort</a>, openly available <a href="https://huggingface.co/datasets/latam-gpt/CHOCLO">on Hugging Face</a>—is a 104,847-question benchmark of Latin American cultural knowledge (food, flora and fauna, geography, traditions, public figures) spanning the region's countries. CHOCLO ships a hybrid evaluation (lexical overlap, embedding similarity, and an LLM-as-judge); I report the LLM-as-judge part as a binary call—a single external judge decides, for each answer, whether it is semantically equivalent to the reference, and the score is simply the share judged equivalent. Because the same judge grades all four models, the numbers are directly comparable. Here, LatamGPT is the <strong>best model in the table</strong>: 39.5% of its answers are judged equivalent to the gold reference, edging out its base (37.6) and clearly ahead of the newer models (Gemma 4 31B at 31.3, Qwen3.6 27B at 27.1). And the lead is consistent across difficulty levels:
 </p>
 
 | CHOCLO — binary semantic equivalence (%) | LatamGPT 70B   | Llama 3.1 70B | Gemma 4 31B | Qwen3.6 27B |
-| ------------------------------ | -------------- | ------------- | ----------- | ----------- |
-| Overall                        | **39.5** | 37.6          | 31.3        | 27.1        |
-| Fácil (easy)                  | **59.8** | 57.1          | 48.4        | 45.1        |
-| Intermedia (intermediate)      | **33.9** | 32.3          | 24.3        | 20.7        |
-| Difícil (hard)                | **24.9** | 23.6          | 21.3        | 15.6        |
+| ----------------------------------------- | -------------- | ------------- | ----------- | ----------- |
+| Overall                                   | **39.5** | 37.6          | 31.3        | 27.1        |
+| Fácil (easy)                             | **59.8** | 57.1          | 48.4        | 45.1        |
+| Intermedia (intermediate)                 | **33.9** | 32.3          | 24.3        | 20.7        |
+| Difícil (hard)                           | **24.9** | 23.6          | 21.3        | 15.6        |
 
 <p style='text-align: justify;'>
-This is the result that justifies the effort. Local cultural knowledge does not fall out of scale or recency—Gemma and Qwen are newer and strong, and they still lose here, because the relevant facts about a Chilean dish or a Peruvian tradition were simply never in their training data. You cannot reason your way to knowledge you were never shown. The regional corpus put that knowledge in, and CHOCLO can see it. The honest summary of the two tables together: continued pre-training bought a real, measurable gain on exactly the thing it was built for—and paid for it with a broad regression everywhere else.
+This is the result that justifies the effort. Latin American cultural knowledge does not fall out of scale or recency—Gemma and Qwen are newer and strong, and they still lose here, because the relevant facts about a Chilean dish or a Peruvian tradition were simply never in their training data. You cannot reason your way to knowledge you were never shown. The regional corpus put that knowledge in, and CHOCLO can see it.
+</p>
+
+<p style='text-align: justify;'>
+But it does not win <em>every</em> cultural test. <a href="https://huggingface.co/datasets/latam-gpt/Trueque-Benchmark-beta-0.1">Trueque</a>—a smaller, human-reviewed collaborative Latin American QA benchmark (500 questions in this beta, scored the same way: a single external judge making a binary semantic-equivalence call)—tells a more mixed story. LatamGPT again beats its own base (54.2 vs. 51.6) and Qwen (46.0), so the edge the regional corpus gives it over Llama 3.1 holds. But here Gemma 4 31B wins outright, and not by a little: 67.0 to LatamGPT's 54.2. On CHOCLO's long-tail, machine-generated facts the regional data is decisive; on Trueque's broader, human-reviewed questions, a stronger and newer general model pulls ahead despite never being trained on the region.
+</p>
+
+<p style='text-align: justify;'>
+Side by side, the two Latin American benchmarks (overall, same single-judge scoring):
+</p>
+
+| Overall — binary semantic equivalence (%) | LatamGPT 70B   | Llama 3.1 70B | Gemma 4 31B    | Qwen3.6 27B |
+| ------------------------------------------ | -------------- | ------------- | -------------- | ----------- |
+| CHOCLO (n = 104,847)                       | **39.5** | 37.6          | 31.3           | 27.1        |
+| Trueque (n = 500, beta)                    | 54.2           | 51.6          | **67.0** | 46.0        |
+
+<p style='text-align: justify;'>
+The honest summary of all of it: continued pre-training bought a consistent edge over the base model on Latin American knowledge—and an outright win on CHOCLO—but not enough to beat a much stronger, newer model on every cultural benchmark, and it paid for that edge with a broad regression on general ability.
 </p>
 
 ## The uncomfortable comparison
 
 <p style='text-align: justify;'>
-There is a harder fact lurking in the same chart. Gemma 4 31B and Qwen3.6 27B are <em>less than half the size</em> of LatamGPT and roughly two years newer, and they dominate the core academic benchmarks—often by twenty points or more. This is the structural problem with adapting a base model: you inherit its ceiling. CPT on a 2024-era Llama cannot out-run pre-training recipes from 2026, no matter how good your regional data is. And the target keeps moving: in 2026 the open-weight frontier ships a major model every few weeks (<a href="https://huggingface.co/blog/daya-shankar/open-source-llms">one tally counted five frontier-class open-weight LLMs in a single month</a>). By the time you finish adapting last year's base, this year's smaller model has lapped you on everything except the local knowledge you added by hand.
+There is a harder fact lurking in the same chart. Gemma 4 31B and Qwen3.6 27B are <em>less than half the size</em> of LatamGPT and roughly two years newer, and they dominate the core academic benchmarks—often by twenty points or more. This is the structural problem with adapting a base model: you inherit its ceiling. CPT on a 2024-era Llama cannot out-run pre-training recipes from 2026, no matter how good your regional data is. And the target keeps moving: in 2026 the open-weight frontier ships a major model every few weeks (<a href="https://huggingface.co/blog/daya-shankar/open-source-llms">one tally counted five frontier-class open-weight LLMs in a single month</a>). By the time you finish adapting last year's base, this year's smaller model has lapped you on the academic benchmarks—and, as Trueque shows, can even take some of the cultural ones—leaving the long-tail Latin American knowledge of CHOCLO as the clearest thing you actually gained.
 </p>
 
 ## So what is the real contribution?
@@ -81,7 +98,7 @@ This is where I want to be a friendly critic, because I genuinely admire the amb
 </p>
 
 <p style='text-align: justify;'>
-<strong>Does Latin America need to <em>train</em> a model, or to <em>curate</em> data?</strong> A regional foundation model is a multi-million-dollar bet that frontier labs match in a day of compute. High-quality, openly licensed cultural data is cheaper, durable, and—crucially—usable by <em>any</em> model that matters. <strong>What is the data actually contributing?</strong> CHOCLO already shows it: the local knowledge it encodes is the one place LatamGPT wins. That signal is more valuable as a portable resource than as something frozen into one set of weights. <strong>And is the real leverage in deployment rather than pre-training?</strong> The same curated knowledge can be injected through retrieval-augmented generation, in-context examples, or as a callable "cultural competence" skill for agentic systems—often beating brute-force pre-training on cost and freshness, and improving every model instead of just one.
+<strong>Does Latin America need to <em>train</em> a model, or to <em>curate</em> data?</strong> A regional foundation model is a multi-million-dollar bet that frontier labs match in a day of compute. High-quality, openly licensed cultural data is cheaper, durable, and—crucially—usable by <em>any</em> model that matters. <strong>What is the data actually contributing?</strong> CHOCLO already shows it: the Latin American knowledge it encodes is where LatamGPT's edge actually shows. That signal is more valuable as a portable resource than as something frozen into one set of weights. <strong>And is the real leverage in deployment rather than pre-training?</strong> The same curated knowledge can be injected through retrieval-augmented generation, in-context examples, or as a callable "cultural competence" skill for agentic systems—often beating brute-force pre-training on cost and freshness, and improving every model instead of just one.
 </p>
 
 <p style='text-align: justify;'>
@@ -91,14 +108,16 @@ None of this diminishes what LatamGPT accomplished: a large, multi-country colla
 ## A note on the numbers
 
 <p style='text-align: justify;'>
-All numbers come from two open evaluation frameworks: the Spanish academic benchmarks were run with EleutherAI's <a href="https://github.com/EleutherAI/lm-evaluation-harness/">lm-evaluation-harness</a>, and CHOCLO's LLM-as-judge scoring with <a href="https://github.com/confident-ai/deepeval">DeepEval</a>. I use MMLU-ProX (es) as the MMLU number because it is fully Spanish. HeadQA is included for completeness, but Gemma 4 31B's score there (≈21, below chance) is almost certainly an evaluation artifact rather than a real capability gap. CHOCLO is scored by one external judge (gpt-5.4-mini) applied identically to all four models, so the four columns are directly comparable.
+Some caveats on methodology. Every benchmark here is in Spanish, and the prompts used both to generate the models' answers and to judge them were written in Spanish too. The academic benchmarks were run with EleutherAI's <a href="https://github.com/EleutherAI/lm-evaluation-harness/">lm-evaluation-harness</a>; CHOCLO and Trueque were scored with <a href="https://github.com/confident-ai/deepeval">DeepEval</a>, using a single external judge (gpt-5.4-mini) applied identically to every model, so those columns are comparable across models. My LLM-as-judge setup may not exactly reproduce what the dataset authors intended—the repositories don't document the judging methodology in full detail—so the absolute CHOCLO and Trueque scores are best read as internally consistent rather than official. I use MMLU-ProX (es) as the MMLU number because it is fully Spanish. Gemma 4 31B and Qwen3.6 27B were evaluated with reasoning ("thinking") disabled—standard inference. Finally, every result here comes from a single run; the one exception is Gemma 4 31B on HeadQA, which I ran three times and which returned ≈21 (below chance) every time—almost certainly an evaluation artifact rather than a real capability gap.
 </p>
 
 ## References
 
 - LatamGPT model card: [latam-gpt/Llama-3.1-70B-LatamGPT-SFT-1.0](https://huggingface.co/latam-gpt/Llama-3.1-70B-LatamGPT-SFT-1.0) and the [Latam-GPT organization](https://huggingface.co/latam-gpt) on Hugging Face.
+- CHOCLO dataset: [latam-gpt/CHOCLO](https://huggingface.co/datasets/latam-gpt/CHOCLO).
+- Trueque dataset: [latam-gpt/Trueque-Benchmark-beta-0.1](https://huggingface.co/datasets/latam-gpt/Trueque-Benchmark-beta-0.1).
 - Omar U. Flórez (2026). [*LatamGPT open-weights release announcement (June 1, 2026)*](https://www.linkedin.com/posts/omar-u-florez_latamgpt-share-7467314002256257025-L45F/).
-- Andrés Carvallo (2026). [*Latam-GPT / CHOCLO datasets on Hugging Face*](https://www.linkedin.com/posts/andres-carvallo-b5836a33a_latam-gptchoclo-datasets-at-hugging-face-share-7449581534673633280-elg4/).
+- CENIA (2026). [*CHOCLO and Trueque benchmarks — release announcement*](https://www.linkedin.com/posts/te-invitamos-a-nuestro-pr%C3%B3ximo-webinar-donde-ugcPost-7450985197631791105-XLKo/) (LinkedIn).
 - France24 (2026). [*Latam-GPT: a Latin American AI to combat US-centric bias*](https://www.france24.com/en/live-news/20260210-latam-gpt-a-latin-american-ai-to-combat-us-centric-bias).
 - AI Business (2026). [*Meet Latam-GPT, the New Open Source AI Model for Latin America*](https://aibusiness.com/generative-ai/the-new-open-source-ai-model-for-latin-america) (source for the ~230 billion words / 300 billion tokens figure, attributed to CENIA).
 - Brookings (2026). [*Latam-GPT and the search for AI sovereignty*](https://www.brookings.edu/articles/latam-gpt-and-the-search-for-ai-sovereignty/).
