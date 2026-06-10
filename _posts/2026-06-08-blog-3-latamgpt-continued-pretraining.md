@@ -9,6 +9,8 @@ tags:
   - benchmarks
   - Spanish NLP
 ---
+<p style="text-align:center;"><em><a href="/posts/2026/blog-latamgpt-pre-entrenamiento-continuo/">Leer en español</a></em></p>
+
 <p style='text-align: justify;'>
 In February 2026, <a href="https://www.france24.com/en/live-news/20260210-latam-gpt-a-latin-american-ai-to-combat-us-centric-bias">LatamGPT was presented</a> to a wave of regional enthusiasm: the first open large language model built <em>from and for</em> Latin America and the Caribbean, coordinated by Chile's CENIA and more than sixty institutions across the region. The promise was sovereignty and cultural relevance—moving Latin America from a consumer of foreign models to a producer of its own. When the model's <a href="https://www.linkedin.com/posts/omar-u-florez_latamgpt-share-7467314002256257025-L45F/?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAChwVRIBWACWa4EEAL8junUYPOgV6dVR1yI">open weights were released on June 1, 2026</a>, though, they arrived without a single benchmark number. As someone who has spent years working with language models, that absence nagged at me. So I decided to run the comparison myself, and to ask the question the release skipped: what did all that training actually buy, and what did it cost?
 </p>
@@ -94,7 +96,7 @@ This is where I want to be a friendly critic, because I genuinely admire the amb
 </p>
 
 <p style='text-align: justify;'>
-<strong>Does Latin America need to <em>train</em> a model, or to <em>curate</em> data?</strong> A regional foundation model is a multi-million-dollar bet that frontier labs match in a day of compute. High-quality, openly licensed cultural data is cheaper, durable, and—crucially—usable by <em>any</em> model that matters. <strong>What is the data actually contributing?</strong> CHOCLO already shows it: the Latin American knowledge it encodes is where LatamGPT's edge actually shows. That signal is more valuable as a portable resource than as something frozen into one set of weights. <strong>And is the real leverage in deployment rather than pre-training?</strong> The same curated knowledge can be injected through retrieval-augmented generation, in-context examples, or as a callable "cultural competence" skill for agentic systems—often beating brute-force pre-training on cost and freshness, and improving every model instead of just one.
+<strong>Does Latin America need to <em>train</em> a model, or to <em>curate</em> data?</strong> A regional foundation model is a multi-million-dollar bet that frontier labs match in a day of compute. High-quality, openly licensed cultural data is cheaper, durable, and—crucially—usable by <em>any</em> model that matters. <strong>What is the data actually contributing?</strong> CHOCLO already shows it: the Latin American knowledge it encodes is where LatamGPT's edge actually shows. That signal is more valuable as a portable resource than as something frozen into one set of weights. <strong>And is the real leverage in deployment rather than pre-training?</strong> The same curated knowledge can be injected through <a href="https://arxiv.org/abs/2511.01649">retrieval-augmented generation</a>, in-context examples, or as a callable "cultural competence" <a href="https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview">skill</a> for agentic systems—often beating brute-force pre-training on cost and freshness, and improving every model instead of just one.
 </p>
 
 <p style='text-align: justify;'>
