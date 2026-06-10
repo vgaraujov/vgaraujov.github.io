@@ -2,6 +2,7 @@
 title: 'Recommendation Systems for Item Recommendation in MOBA Games'
 date: 2020-09-21
 permalink: /posts/2020/blog-recsys-moba/
+excerpt: "Recommending in-game items in MOBA games like League of Legends—from a data-mining baseline to a Transformer (TTIR) that uses match context and attention weights as explanations. Two RecSys papers."
 tags:
   - item recommendation
   - recommendation system

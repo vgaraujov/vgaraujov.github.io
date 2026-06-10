@@ -2,6 +2,7 @@
 title: 'Latin American Knowledge at a Price: Reading LatamGPT Through Its Benchmarks'
 date: 2026-06-08
 permalink: /posts/2026/blog-latamgpt-continued-pretraining/
+excerpt: "LatamGPT is Llama 3.1 70B adapted by continued pre-training. Read against its own base and newer small models—where the regional data pays off, and where it doesn't."
 tags:
   - LatamGPT
   - continued pre-training

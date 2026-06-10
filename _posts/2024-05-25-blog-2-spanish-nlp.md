@@ -2,6 +2,7 @@
 title: 'Democratizing Spanish NLP: Language Models and Benchmarks'
 date: 2024-05-25
 permalink: /posts/2024/blog-spanish-nlp-democratization/
+excerpt: "Making Spanish NLP accessible: lightweight language models (ALBETO, DistilBETO), evaluation benchmarks (Spanish SentEval and DiscoEval), and seq2seq models (BARTO, T5S)—all open."
 tags:
   - Spanish NLP
   - language models
