@@ -3,7 +3,6 @@ permalink: /posts/2026/blog-latamgpt-benchmarks-es/
 title: 'Lo que LatamGPT sabe (y lo que no): una primera mirada a sus benchmarks'
 author_profile: true
 ---
-
 <p style="text-align:center;"><em><a href="/posts/2026/blog-latamgpt-benchmarks/">Read in English</a></em></p>
 
 <p style='text-align: justify;'>
@@ -13,7 +12,7 @@ En febrero de 2026, <a href="https://www.france24.com/en/live-news/20260210-lata
 ## Qué es LatamGPT y contra qué lo comparé
 
 <p style='text-align: justify;'>
-<a href="https://huggingface.co/latam-gpt/Llama-3.1-70B-LatamGPT-SFT-1.0">LatamGPT</a> parte del Llama 3.1 70B de Meta (el modelo base) y lo adapta en dos etapas: <em>continued pre-training</em> (CPT) sobre unas <a href="https://aibusiness.com/generative-ai/the-new-open-source-ai-model-for-latin-america">230 mil millones de palabras</a> de texto regional con licencia—en español, portugués y lenguas indígenas—y después un <em>supervised fine-tuning</em> (SFT) para que siga instrucciones. Es decir, el modelo que se liberó es un modelo instruct, y eso marca la comparación: la vara justa no es GPT-5 ni un ideal abstracto, sino otros modelos instruct de tamaño parecido o menor. Lo comparo contra tres: el propio <strong>Llama 3.1 70B Instruct</strong> de Meta (que sale de la misma base) y dos modelos más nuevos y pequeños, <strong>Gemma 4 31B</strong> y <strong>Qwen3.6 27B</strong>. <strong>Los cuatro son modelos instruct</strong>, evaluados de la misma forma.
+<a href="https://huggingface.co/latam-gpt/Llama-3.1-70B-LatamGPT-SFT-1.0">LatamGPT</a> parte del Llama 3.1 70B de Meta (el modelo base) y lo adapta en dos etapas: <em>continued pre-training</em> (CPT) sobre unas <a href="https://aibusiness.com/generative-ai/the-new-open-source-ai-model-for-latin-america">230 mil millones de palabras</a> de texto regional—en español, portugués y lenguas indígenas—y después un <em>supervised fine-tuning</em> (SFT) para que siga instrucciones. Es decir, el modelo que se liberó es un modelo instruct, y eso marca la comparación: la vara justa no es GPT-5 ni un ideal abstracto, sino otros modelos instruct de tamaño parecido o menor. Lo comparo contra tres: el propio <strong>Llama 3.1 70B Instruct</strong> de Meta (que sale de la misma base) y dos modelos más nuevos y pequeños, <strong>Gemma 4 31B</strong> y <strong>Qwen3.6 27B</strong>. <strong>Los cuatro son modelos instruct</strong>, evaluados de la misma forma.
 </p>
 
 <p style='text-align: justify;'>
@@ -45,13 +44,13 @@ Pero no gana <em>todas</em> las pruebas culturales. <a href="https://huggingface
 Los dos benchmarks culturales, lado a lado, con CHOCLO desglosado por dificultad:
 </p>
 
-| Equivalencia semántica binaria (%) | LatamGPT 70B | Llama 3.1 70B | Gemma 4 31B | Qwen3.6 27B |
-| --- | --- | --- | --- | --- |
-| CHOCLO — Total (n = 104,847) | **39.5** | 37.6 | 31.3 | 27.1 |
-| — Fácil | **59.8** | 57.1 | 48.4 | 45.1 |
-| — Intermedia | **33.9** | 32.3 | 24.3 | 20.7 |
-| — Difícil | **24.9** | 23.6 | 21.3 | 15.6 |
-| Trueque — Total (n = 500, beta) | 54.2 | 51.6 | **67.0** | 46.0 |
+| Equivalencia semántica binaria (%) | LatamGPT 70B   | Llama 3.1 70B | Gemma 4 31B    | Qwen3.6 27B |
+| ----------------------------------- | -------------- | ------------- | -------------- | ----------- |
+| CHOCLO — Total (n = 104,847)       | **39.5** | 37.6          | 31.3           | 27.1        |
+| — Fácil                           | **59.8** | 57.1          | 48.4           | 45.1        |
+| — Intermedia                       | **33.9** | 32.3          | 24.3           | 20.7        |
+| — Difícil                         | **24.9** | 23.6          | 21.3           | 15.6        |
+| Trueque — Total (n = 500, beta)    | 54.2           | 51.6          | **67.0** | 46.0        |
 
 ## Donde se queda atrás: la capacidad general
 
@@ -63,12 +62,12 @@ Ahora el otro lado. A diferencia del inglés, no hay un conjunto de benchmarks e
 Las cifras exactas de los benchmarks generales:
 </p>
 
-| Benchmark general (español) | Shots | n | Métrica | LatamGPT 70B | Llama 3.1 70B | Gemma 4 31B | Qwen3.6 27B |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| MMLU-ProX (es) | 5 | 11,759 | EM | 45.81 | 61.48 | **82.86** | 77.82 |
-| MGSM native-CoT (es) | 8 | 250 | EM | 78.80 | 88.80 | **90.80** | 86.80 |
-| EQ-Bench (es) | 0 | 168 | EQ-Bench | 68.95 | 75.35 | **78.06** | 77.70 |
-| HeadQA (es) | 0 | 2,742 | Acc | 51.17 | 50.40 | 20.97 | **52.04** |
+| Benchmark general (español) | Shots | n      | Métrica | LatamGPT 70B | Llama 3.1 70B | Gemma 4 31B     | Qwen3.6 27B     |
+| ---------------------------- | ----- | ------ | -------- | ------------ | ------------- | --------------- | --------------- |
+| MMLU-ProX (es)               | 5     | 11,759 | EM       | 45.81        | 61.48         | **82.86** | 77.82           |
+| MGSM native-CoT (es)         | 8     | 250    | EM       | 78.80        | 88.80         | **90.80** | 86.80           |
+| EQ-Bench (es)                | 0     | 168    | EQ-Bench | 68.95        | 75.35         | **78.06** | 77.70           |
+| HeadQA (es)                  | 0     | 2,742  | Acc      | 51.17        | 50.40         | 20.97           | **52.04** |
 
 <p style='text-align: justify;'>
 EM = exact match, Acc = accuracy; EQ-Bench usa su propia escala 0–100. En negrita, el mejor puntaje de cada fila. Los cuatro son modelos instruct; la columna "Llama 3.1 70B" es el checkpoint Instruct (ver la nota al final). El puntaje de Gemma en HeadQA queda de lado, como artefacto.
